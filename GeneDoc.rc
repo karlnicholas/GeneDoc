@@ -1,0 +1,2096 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""res\\genedoc.rc2""  // non-App Studio edited resources\r\n"
+    "\r\n"
+    "#include ""afxres.rc""  \t// Standard components\r\n"
+    "#include ""afxprint.rc""\t// printing/print preview resources\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "RES\\GENEDOC.ICO"
+IDR_GENEDOTYPE          ICON    DISCARDABLE     "RES\\GENEDDOC.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "RES\\TOOLBAR.BMP"
+IDB_SMALLLOGO           BITMAP  DISCARDABLE     "RES\\MEBITU.BMP"
+IDB_GENEDOC             BITMAP  DISCARDABLE     "RES\\GENEDOCU.BMP"
+IDB_PHYLOBAR            BITMAP  DISCARDABLE     "RES\\PHYLOBAR.BMP"
+IDB_GENEBAR             BITMAP  DISCARDABLE     "RES\\GENEBAR.BMP"
+IDB_DSTATBAR            BITMAP  DISCARDABLE     "RES\\DSTATBAR.BMP"
+IDB_INLOVE              BITMAP  DISCARDABLE     "RES\\INLOVE.BMP"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "RES\\SMLOGO.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM "&Using Help",                 ID_HELP_USING
+        MENUITEM "",                            1
+        MENUITEM "&About GeneDoc...",           ID_APP_ABOUT
+    END
+END
+
+IDR_GENEDOTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "I&mport",                     IDM_FILEIMPORT
+        MENUITEM "&Export",                     IDM_FILEEXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Project"
+    BEGIN
+        MENUITEM "&Configure\tCtrl+G",          IDM_CONFIGURE
+        MENUITEM SEPARATOR
+        MENUITEM "Edit Se&quences List\tCtrl+Q", IDM_GENEEDITSEQ
+        MENUITEM SEPARATOR
+        MENUITEM "&Titling Facility",           IDM_TITLINGF
+        MENUITEM SEPARATOR
+        MENUITEM "Save &User Defaults",         IDM_GENESAVEINI
+        MENUITEM "&Load  User Defaults",        IDM_GENELOADINI
+        MENUITEM SEPARATOR
+        POPUP "Load Structure Definition"
+        BEGIN
+            MENUITEM "EMBL",                        IDM_STCLOADEMBL
+            MENUITEM "PSDB",                        IDM_STCLOADPSDB
+            MENUITEM "PDB",                         IDM_STCLOADPDB
+            MENUITEM SEPARATOR
+            MENUITEM "Load &User File",             IDM_STCLOADUSERFILE
+            MENUITEM SEPARATOR
+            MENUITEM "Clear &All",                  IDM_STCLEARALL
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Select Co&lumns\tCtrl+L",     IDM_SELECTCOL
+        MENUITEM "Copy to Ne&w Project\tCtrl+W", IDM_GENECREATEWIN
+        MENUITEM "Replace with other &project", IDM_REPLACEFROMPROJ
+        MENUITEM "Trans &DNA to Protein",       IDM_DNATRANS
+        MENUITEM SEPARATOR
+        MENUITEM "&ReGap DNA Project",          IDM_REGAPDNA
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Pairwise Alignment",         IDM_ALIGN
+        MENUITEM SEPARATOR
+        MENUITEM "&Find\tF9",                   IDM_FIND
+        MENUITEM "Find &Next\tF10",             IDM_FINDNEXT
+        MENUITEM "&Replace\tCtrl+R",            IDM_GENEFINDREPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "S&elect Blocks for Copy\tCtrl+E", IDM_SELECT
+        POPUP "Copy Selected Blocks to"
+        BEGIN
+            MENUITEM "&MetaFile\tCtrl+C",           IDM_COPYMETACLIP
+            MENUITEM "MetaFile &File",              IDM_COPYMETAFILE
+            MENUITEM "&Pict File",                  IDM_GENECOPYPICT
+            MENUITEM "&HTML File",                  IDM_GENECOPYHTML
+            MENUITEM "&RTF File",                   IDM_GENECOPYRTF
+            POPUP "Bitmap"
+            BEGIN
+                MENUITEM "&Copy 16 Color DIB",          ID_EDIT_COPY
+                MENUITEM "Copy &256 Color DIB",         ID_EDIT_COPY8
+                MENUITEM "Copy &Display Resolution",    ID_EDIT_COPY0
+                MENUITEM "Copy as Bitmap (16 bit paint)", ID_EDIT_COPYBIT
+            END
+            POPUP "In&verted Bitmap"
+            BEGIN
+                MENUITEM "Copy 16 Color &Inverted\tCtrl+V", ID_EDIT_COPYINV
+                MENUITEM "Copy &256 Color Inverted",    ID_EDIT_COPYINV8
+                MENUITEM "Copy &Display Res Inverted",  ID_EDIT_COPYINV0
+                MENUITEM "Copy as Inv. Bitmap (16 bit paint)", 
+                                                        ID_EDIT_COPYINVBIT
+            END
+        END
+        MENUITEM "Copy Aligment as &Text",      IDM_COPYTEXT
+        MENUITEM "Copy Consens&us as Fasta",    IDM_COPYCONS
+        MENUITEM "Copy Consensus as &Prosite",  IDM_CONSPROSITE
+        MENUITEM SEPARATOR
+        MENUITEM "Select Co&lumns\tCtrl+L",     IDM_SELECTCOL
+        MENUITEM "&Delete All Data\tCtrl+D",    IDM_DELCOLUMNS
+        MENUITEM "Cop&y Data Between Seqs",     IDM_GENECOPYSEQ
+        MENUITEM SEPARATOR
+        MENUITEM "Resid&ue Edit Mode\tCtrl+U",  IDM_GENEEDITMODE
+        MENUITEM SEPARATOR
+        MENUITEM "Clear &Gap Columns",          IDM_CLEARGAPCOLS
+        MENUITEM "Clear &Man Comments",         IDM_CLEARCOMMENTS
+    END
+    POPUP "&Arrange"
+    BEGIN
+        MENUITEM "Gr&ab and Drag Sequences\tCtrl+A", IDM_GENEARRANGE
+        MENUITEM "Sl&ide Sequences\tF5",        IDM_GENEMOVE
+        MENUITEM "&Insert Gap into Sequence",   IDM_GENEINSERTDASH
+        MENUITEM "&Delete Gap from Sequence",   IDM_GENEDELETEDASH
+        MENUITEM SEPARATOR
+        MENUITEM "S&elect Sequences to work on\tF8", IDM_SELECTARRSEQ
+        MENUITEM "Com&plement Selection\tCtrl+F8", IDM_COMPLIMENTSEL
+        MENUITEM "Insert Gaps in &Other Sequences\tF6", IDM_GENEINSERTOTHER
+        MENUITEM "Delete Gaps from &Other Sequences", IDM_GENEDELETEOTHER
+        MENUITEM "Insert Gap Colu&mn\tF7",      IDM_GENEINSERTONE
+        MENUITEM "Delete Gap Colu&mn",          IDM_GENEDELETEONE
+        MENUITEM SEPARATOR
+        MENUITEM "Select Co&lumns\tCtrl+L",     IDM_SELECTCOL
+        MENUITEM "&Fill Columns with Gaps\tCtrl+F", IDM_GENEINSERTFILL
+        MENUITEM "Delete &Columns if Gaps",     IDM_GENEDELETEFILL
+    END
+    POPUP "Sha&de"
+    BEGIN
+        MENUITEM "&Conservation Mode",          IDM_GENEMODECONSERVED
+        MENUITEM "&Quantify Mode",              IDM_GENEMODEQUANTIFY
+        MENUITEM "&Property Mode",              IDM_GENEMODEPROPERTY
+        MENUITEM "Sea&rch Mode",                IDM_GENEMODESEARCH
+        MENUITEM "&Structure Mode",             IDM_GENEMODESTRUCTURE
+        MENUITEM "PhysioChe&mical Prop",        IDM_GENEMODEPHYSIOCHEM
+        MENUITEM "&Identity Mode",              IDM_GENEMODESIMILARITY
+        MENUITEM "&Log Odds Mode",              IDM_GENEMODELOGODDS
+        MENUITEM SEPARATOR
+        MENUITEM "&Enable Similarity Groups",   IDM_GENEGROUPENABLE
+        MENUITEM "&Differences Mode",           IDM_GENERESIDUEMODEDIFF
+        MENUITEM SEPARATOR
+        MENUITEM "Shade to &4 levels\tF4",      IDM_GENEAUTOSHADE4
+        MENUITEM "Shade to &3 levels\tF3",      IDM_GENEAUTOSHADE3
+        MENUITEM "Shade to &2 levels\tF2",      IDM_GENEAUTOSHADE2
+        MENUITEM "&Clear all Shading\tCtrl+B",  IDM_GENECLEARSHADE
+        MENUITEM SEPARATOR
+        MENUITEM "&Manual Shade Mode\tCtrl+M",  IDM_MANUALSHADE
+        MENUITEM "Clear All Man Shade",         IDM_CLEARMANSHADE
+    END
+    POPUP "&Groups"
+    BEGIN
+        MENUITEM "&Edit Sequence Groups",       IDM_EDITGROUPPROP
+        MENUITEM "Shade  &Group Configuration", IDM_GENESHADEGROUPS
+        MENUITEM "Shade Group &Contrast",       IDM_GENESHADECONTRAST
+        MENUITEM "Shade Group Contrast / N&o Gaps", 
+                                                IDM_GENESHADECONTRASTNOGAP
+        MENUITEM "Shade Group Con&served",      IDM_GENESHADEGROUPCONSERVE
+        MENUITEM "Shade Group Cons. W/&XShade", IDM_GENEGROUPSGCONX
+        MENUITEM "Shade Group &PCR Constrast",  IDM_GROUPSHADEPCR
+        MENUITEM "Shade PCR &W/Similarities",   IDM_GROUPSHADEPCRSIM
+        MENUITEM "Shade Physi&oChemical Prop.", IDM_GENESHADEGROUPPHYSCHEM
+        MENUITEM "Shade DNA Group Set.",        IDM_GENESHADEGROUPDNA
+    END
+    POPUP "Sc&ore"
+    BEGIN
+        MENUITEM "Score by &Sum of Pairs",      IDM_GENESCOREPAIR
+        MENUITEM "Score by &Phylogen Tree",     IDM_GENESCORETREE
+        MENUITEM "Score by Num&bed Tree",       IDM_GENESCORENUMB
+        MENUITEM "Score by &LogOdds",           IDM_GENESCORELO
+        MENUITEM SEPARATOR
+        MENUITEM "Select Co&lumns\tCtrl+L",     IDM_SELECTCOL
+        MENUITEM "Sc&ore Selection\tCtrl+R",    IDM_GENESCORE
+        MENUITEM "Write LogOdds Matri&x",       IDM_GENEWRITELOGODDS
+        MENUITEM SEPARATOR
+        MENUITEM "Re-Score &All Scores",        IDM_RESCOREALL
+        MENUITEM "Clear all &Scores",           IDM_GENECLEARSCORE
+        MENUITEM SEPARATOR
+        MENUITEM "Show Score &Table",           IDM_SHOWTABLE
+        MENUITEM "Scoring &Info Report",        IDM_GENESCOREINFO
+    END
+    POPUP "&Tree"
+    BEGIN
+        MENUITEM "&Copy to Clipboard",          IDM_PHYLOCOPY
+        MENUITEM SEPARATOR
+        MENUITEM "Create &Node",                IDM_PHYLOCREATE
+        MENUITEM "De&lete Node",                IDM_PHYLODELETE
+        MENUITEM "Move &Up\tCtrl+Up",           IDM_PHYLOMVUP
+        MENUITEM "Move &Down\tCtrl+Dn",         IDM_PHYLOMVDN
+        MENUITEM "Clear &Tree",                 IDM_PHYLOCLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Display Tree &Weights",       IDM_DISPTREEWEIGHT
+        MENUITEM SEPARATOR
+        MENUITEM "&Manage Expression",          IDM_PHYLODLG
+    END
+    POPUP "&Reports"
+    BEGIN
+        MENUITEM "St&atistics Report",          IDM_GENESTATFILE
+        MENUITEM "S&core Report",               IDM_GENESCOREFILE
+        MENUITEM "&Base Composition Report",    IDM_DNAFFREQREP
+        MENUITEM "Co&lumn Composition Rep",     IDM_DNACOLFREQREP
+        MENUITEM "Column Comp W/&Weights",      IDM_DNACOLFRWREP
+        MENUITEM "En&zyme Fragments",           IDM_SRCHREPVIEW
+        MENUITEM "Log&Odds Report",             IDM_LOGODDSVIEW
+        MENUITEM "S&hading Report",             IDM_SHADING_REP
+        MENUITEM "&Manual Shade Rep",           IDM_MANSHADEREP
+        MENUITEM SEPARATOR
+        MENUITEM "Configure Reports",           IDM_CONFIGREPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&Save Report File",           IDM_REPSAVEFILE
+    END
+    POPUP "P&lot"
+    BEGIN
+        MENUITEM "&Plot % Identity",            IDM_PLOTSTATDSTAT
+        MENUITEM "Plot % Fav. Subs.",           IDM_PLOTFAVSUBS
+        MENUITEM "Plot Group % Ident",          IDM_PLOTGROUP
+        MENUITEM "Plot Group % Fav.",           IDM_PLOTGROUPFAV
+        MENUITEM SEPARATOR
+        MENUITEM "Plot Unique Fragments",       IDM_PLOTFRAG
+        MENUITEM SEPARATOR
+        MENUITEM "Sc&ore Selection (Groups)",   IDM_DSTATSCORE
+        MENUITEM "Score Selection (&All)",      IDM_DSTATSCOREALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy to Clipboard",          IDM_DSTATCOPY
+        MENUITEM SEPARATOR
+        POPUP "Graph Setup and Data"
+        BEGIN
+            MENUITEM "&Setup Graph",                IDM_DSTATGRAPHSETUP
+            MENUITEM SEPARATOR
+            MENUITEM "Write &Plot Data",            IDM_DSTATWRITEDATA
+            MENUITEM SEPARATOR
+            MENUITEM "Read Data Set &1",            IDM_DSTATREADSET1
+            MENUITEM "Read Data Set &2",            IDM_DSTATREADSET2
+            MENUITEM "&Write Data Sets",            IDM_DSTATWRITESCORE
+            MENUITEM "&Read Data Sets",             IDM_DSTATREADSETS
+        END
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Alignment View",             IDM_GENEVIEW
+        MENUITEM "S&ummary View",               IDM_SUMMARYVIEW
+        MENUITEM "&Report View",                IDM_GENEREPORTVIEW
+        MENUITEM "&Phylogenetic Tree",          IDM_PHYLOVIEW
+        MENUITEM "&DStat/Plot Graph",           IDM_GENEDSTATVIEW
+        MENUITEM "&Gel View",                   IDM_GENEGELVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM "&Using Help",                 ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "&About GeneDoc...",           ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            IDM_GENEARRANGE,        VIRTKEY, CONTROL, NOINVERT
+    "B",            IDM_GENECLEARSHADE,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            IDM_DELCOLUMNS,         VIRTKEY, CONTROL, NOINVERT
+    "E",            IDM_SELECT,             VIRTKEY, CONTROL, NOINVERT
+    "F",            IDM_GENEINSERTFILL,     VIRTKEY, CONTROL, NOINVERT
+    "G",            IDM_CONFIGURE,          VIRTKEY, CONTROL, NOINVERT
+    "L",            IDM_SELECTCOL,          VIRTKEY, CONTROL, NOINVERT
+    "M",            IDM_MANUALSHADE,        VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "Q",            IDM_GENEEDITSEQ,        VIRTKEY, CONTROL, NOINVERT
+    "R",            IDM_GENEFINDREPLACE,    VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "U",            IDM_GENEEDITMODE,       VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_COPYINV,        VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        IDM_PHYLOMVDN,          VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F10,         IDM_FINDNEXT,           VIRTKEY, NOINVERT
+    VK_F2,          IDM_GENEAUTOSHADE2,     VIRTKEY, NOINVERT
+    VK_F3,          IDM_GENEAUTOSHADE3,     VIRTKEY, NOINVERT
+    VK_F4,          IDM_GENEAUTOSHADE4,     VIRTKEY, NOINVERT
+    VK_F5,          IDM_GENEMOVE,           VIRTKEY, NOINVERT
+    VK_F6,          IDM_GENEINSERTOTHER,    VIRTKEY, NOINVERT
+    VK_F7,          IDM_GENEINSERTONE,      VIRTKEY, NOINVERT
+    VK_F8,          IDM_SELECTARRSEQ,       VIRTKEY, NOINVERT
+    VK_F8,          IDM_COMPLIMENTSEL,      VIRTKEY, CONTROL, NOINVERT
+    VK_F9,          IDM_FIND,               VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_UP,          IDM_PHYLOMVUP,          VIRTKEY, CONTROL, NOINVERT
+    "W",            IDM_GENECREATEWIN,      VIRTKEY, CONTROL, NOINVERT
+    "X",            IDM_GENESCOREKEY,       VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  34, 22, 195, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About GeneDoc"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Multiple Sequence\n  Alignment Editor\n && Shading Utility\n  Version 2.7.000",
+                    IDC_STATIC,116,27,62,33
+    LTEXT           "Copyright © 2006\n by Karl Nicholas",IDC_STATIC,117,64,
+                    64,18
+    DEFPUSHBUTTON   "OK",IDOK,152,180,32,14,WS_GROUP
+    GROUPBOX        "Citations",IDC_STATIC,0,136,186,39
+    LTEXT           "Nicholas, Karl B., and Nicholas, Hugh B. Jr., 1997, GeneDoc: a tool for editing and annotating multiple sequence alignments. Distributed by the author.",
+                    IDC_STATIC,9,145,173,26
+    LTEXT           "www.psc.edu/biomed/genedoc",IDC_STATIC,12,183,130,8
+END
+
+IDD_SHADEEDITDLG DIALOG DISCARDABLE  0, 0, 126, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit/Add Substition Group"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SHADEEDITCONT,50,23,65,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,10,45,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,70,45,50,14
+    LTEXT           "  Group\nNumber",IDC_STATIC,15,3,30,20
+    LTEXT           "Group Contents",IDC_STATIC,50,11,55,8
+    LTEXT           "11",IDC_SHADEEDITNUM,30,25,10,8
+END
+
+IDD_CONFDISPLAY DIALOG DISCARDABLE  0, 0, 300, 210
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Project"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Font Settings",IDC_STATIC,11,3,60,46
+    LTEXT           "Points:",IDC_STATIC,20,17,24,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDITFONTPOINTS,48,15,17,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_FONTWEIGHT,17,31,48,42,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Seq Block &Sizing",IDC_STATIC,76,3,69,62
+    CONTROL         "Screen Size",IDC_GENEAUTOWIDTH,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,80,16,50,10
+    CONTROL         "Fixed:",IDC_GENEFIXEDWIDTH,"Button",BS_AUTORADIOBUTTON,
+                    80,31,31,10
+    CONTROL         "Alignment Size",IDC_GENEALIGNWIDTH,"Button",
+                    BS_AUTORADIOBUTTON,80,47,59,10
+    EDITTEXT        IDC_EDITWIDTH,114,29,19,13,ES_AUTOHSCROLL | WS_GROUP
+    GROUPBOX        "Co&nsensus Line",IDC_STATIC,159,3,70,46,WS_GROUP
+    CONTROL         "Line Above",IDC_CONSENSUSLINE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,163,15,48,10
+    CONTROL         "Line Below",IDC_CONSENSUSBELOW,"Button",
+                    BS_AUTORADIOBUTTON,163,25,47,10
+    CONTROL         "No Consensus",IDC_CONSENSUSNONE,"Button",
+                    BS_AUTORADIOBUTTON,163,36,58,10
+    GROUPBOX        "S&coring",IDC_STATIC,233,3,64,57,WS_GROUP
+    CONTROL         "Pair Wise",IDC_SCOREPAIR,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,237,16,44,10
+    CONTROL         "Tree",IDC_SCORETREE,"Button",BS_AUTORADIOBUTTON,237,26,
+                    27,10
+    CONTROL         "Numbed Tree",IDC_SCORETREENUMB,"Button",
+                    BS_AUTORADIOBUTTON,237,36,55,10
+    CONTROL         "LogOdds",IDC_SCORELOG,"Button",BS_AUTORADIOBUTTON,237,
+                    47,42,10
+    GROUPBOX        "Gap &Ind.",IDC_STATIC,12,52,53,34,WS_GROUP
+    CONTROL         "Dash '-'",IDC_GAPDASH,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,16,63,39,10
+    CONTROL         "Dot '.'",IDC_GAPDOT,"Button",BS_AUTORADIOBUTTON,16,74,
+                    35,10
+    GROUPBOX        "Seq &Loc Ind.",IDC_STATIC,12,88,53,66,WS_GROUP
+    CONTROL         "Off",IDC_SEQINDON,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,16,98,25,10
+    CONTROL         "On",IDC_SEQINDOFF,"Button",BS_AUTORADIOBUTTON,16,109,26,
+                    10
+    CONTROL         "After Name",IDC_LOCAFTERNAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,16,123,48,10
+    CONTROL         "After Seq",IDC_LOCAFTERSEQ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,136,46,10
+    GROUPBOX        "Residues",IDC_STATIC,11,157,54,48,WS_GROUP
+    CONTROL         "&Normal",IDC_RESIDUENORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,15,167,34,10
+    CONTROL         "&Upper",IDC_RESIDUEUPPER,"Button",BS_AUTORADIOBUTTON,15,
+                    179,32,10
+    CONTROL         "&Lower",IDC_RESIDUELOWER,"Button",BS_AUTORADIOBUTTON,15,
+                    191,31,10
+    GROUPBOX        "Project &Type",IDC_STATIC,76,67,70,57,WS_GROUP
+    CONTROL         "Protein",IDC_TYPEPROTEIN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,82,77,36,10
+    CONTROL         "Mixed Nucleic",IDC_TYPEMIXEDNUCLEIC,"Button",
+                    BS_AUTORADIOBUTTON,82,88,57,10
+    CONTROL         "DNA Only",IDC_TYPEDNA,"Button",BS_AUTORADIOBUTTON,82,98,
+                    43,10
+    CONTROL         "RNA Only",IDC_TYPERNA,"Button",BS_AUTORADIOBUTTON,82,
+                    109,43,10
+    GROUPBOX        "DNA Ambi&guity",IDC_STATIC,76,127,70,36,WS_GROUP
+    CONTROL         "Disabled",IDC_DNAAMBDIS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,81,139,40,10
+    CONTROL         "Enabled",IDC_DNAAMBEN,"Button",BS_AUTORADIOBUTTON,81,
+                    149,39,10
+    CONTROL         "Make Backups",IDC_MAKEBACKUPS,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,76,166,60,10
+    CONTROL         "Show '~' as ' '",IDC_TRANSTIDLE,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,76,177,59,10
+    CONTROL         "Show Man Shade",IDC_SHOWMANSHADE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,76,187,70,10
+    CONTROL         "Show Comments",IDC_SHOWCOMMENTS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,76,197,66,10
+    GROUPBOX        "Pict File Adjust",IDC_STATIC,149,147,59,63,WS_GROUP
+    LTEXT           "Width",IDC_STATIC,156,162,20,8
+    EDITTEXT        IDC_PICTWIDTH,180,159,19,13,ES_AUTOHSCROLL
+    LTEXT           "Height",IDC_STATIC,153,178,23,8
+    EDITTEXT        IDC_PICTHEIGHT,180,175,19,13,ES_AUTOHSCROLL
+    LTEXT           "Ascent",IDC_STATIC,152,193,24,8
+    EDITTEXT        IDC_PICTASCENT,180,191,19,13,ES_AUTOHSCROLL
+    GROUPBOX        "Marker Line",IDC_STATIC,217,63,80,81
+    CONTROL         "&Enabled  ",IDC_MARKERENABLED,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,257,71,36,10
+    LTEXT           "S&ymbol:",IDC_STATIC,250,85,27,8
+    EDITTEXT        IDC_MARKERSYMBOL,280,83,13,13,ES_AUTOHSCROLL
+    LTEXT           "Marker Co&unt:",IDC_STATIC,224,101,46,8
+    EDITTEXT        IDC_MARKERCOUNT,273,98,20,13,ES_AUTOHSCROLL
+    LTEXT           "Start Nu&mber:",IDC_STATIC,225,116,45,8
+    EDITTEXT        IDC_MARKERSTART,273,113,20,13,ES_AUTOHSCROLL
+    LTEXT           "Number E&very:",IDC_STATIC,222,131,48,8
+    EDITTEXT        IDC_MARKERREPLACE,273,128,20,13,ES_AUTOHSCROLL
+    LTEXT           "&Cons Gap Sym:",IDC_STATIC,224,149,51,8
+    EDITTEXT        IDC_CONSERVEDGAP,279,147,14,13,ES_AUTOHSCROLL
+    LTEXT           "M&ax NameLen:",IDC_STATIC,227,165,49,8,NOT WS_GROUP
+    EDITTEXT        IDC_MAXNAME,278,163,15,13,ES_AUTOHSCROLL
+    LTEXT           "Name Seperati&on:",IDC_STATIC,218,181,59,8,NOT WS_GROUP
+    EDITTEXT        IDC_NAMESEP,278,179,16,13,ES_AUTOHSCROLL
+    LTEXT           "Indicato&r Seperator:",IDC_STATIC,210,197,66,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_INDSEP,278,195,16,13,ES_AUTOHSCROLL
+    GROUPBOX        "Summary Disp.",IDC_STATIC,153,52,59,92
+    LTEXT           "Sum Cols/Inch",IDC_STATIC,159,65,51,8
+    EDITTEXT        IDC_SUMCOLINCH,160,76,19,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SUMCOLINCHDIS,186,76,18,13,ES_READONLY | NOT 
+                    WS_TABSTOP
+    CONTROL         "2 Col 1/1",IDC_COL2WID11,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,159,91,42,10
+    CONTROL         "2 Col 0/2",IDC_SUM2COL02,"Button",BS_AUTORADIOBUTTON,
+                    159,102,42,10
+    CONTROL         "Def. Disp.",IDC_SUMDEFDIS,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,160,115,44,10
+    CONTROL         "Text Black",IDC_SUMTEXTBLACK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,129,46,10
+END
+
+IDD_CONFMODESTYLE DIALOG DISCARDABLE  0, 0, 300, 210
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Shade"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Shading &Mode",IDC_STATIC,4,4,57,103,WS_GROUP
+    CONTROL         "Conserved",IDC_MODECONSERVED,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,8,15,46,10
+    CONTROL         "Quantify",IDC_MODEQUANTIFY,"Button",BS_AUTORADIOBUTTON,
+                    8,26,44,10
+    CONTROL         "Property",IDC_MODEPROPERTY,"Button",BS_AUTORADIOBUTTON,
+                    8,37,46,10
+    CONTROL         "Search",IDC_MODESEARCH,"Button",BS_AUTORADIOBUTTON,8,48,
+                    35,10
+    CONTROL         "Structure",IDC_MODESTRUCTURE,"Button",
+                    BS_AUTORADIOBUTTON,8,59,48,10
+    CONTROL         "PhysioChem",IDC_PHYSIOCHEM,"Button",BS_AUTORADIOBUTTON,
+                    8,70,50,10
+    CONTROL         "Identity",IDC_SIMILARITY,"Button",BS_AUTORADIOBUTTON,8,
+                    81,42,10
+    CONTROL         "LogOdds",IDC_LOGODDS,"Button",BS_AUTORADIOBUTTON,8,92,
+                    40,10
+    GROUPBOX        "Shade &Level",IDC_STATIC,64,4,55,55,WS_GROUP
+    CONTROL         "No Shading",IDC_SHADELEVEL0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,66,14,50,10
+    CONTROL         "2 Levels",IDC_SHADELEVEL2,"Button",BS_AUTORADIOBUTTON,
+                    66,25,44,10
+    CONTROL         "3 Levels",IDC_SHADELEVEL3,"Button",BS_AUTORADIOBUTTON,
+                    66,36,41,10
+    CONTROL         "4 Levels",IDC_SHADELEVEL4,"Button",BS_AUTORADIOBUTTON,
+                    66,47,43,10
+    GROUPBOX        "&Conserved Percent",IDC_STATIC,124,4,72,55,WS_GROUP
+    LTEXT           "Primary:",IDC_STATIC,138,16,26,9,NOT WS_GROUP
+    EDITTEXT        IDC_STRPRIM,166,14,21,13,ES_AUTOHSCROLL
+    LTEXT           "Secondary:",IDC_STATIC,126,30,38,9,NOT WS_GROUP
+    EDITTEXT        IDC_STRSEC,166,28,21,13,ES_AUTOHSCROLL
+    LTEXT           "Tertiary:",IDC_STATIC,137,45,28,9,NOT WS_GROUP
+    EDITTEXT        IDC_STRTERT,166,43,21,13,ES_AUTOHSCROLL
+    GROUPBOX        "&Residue Display Mode",IDC_STATIC,201,4,88,36,WS_GROUP
+    CONTROL         "Normal",IDC_RESDISPNORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,205,14,35,10
+    CONTROL         "Differences",IDC_RESDISPDIFF,"Button",
+                    BS_AUTORADIOBUTTON,205,26,49,10
+    GROUPBOX        "&Difference Mode Style",IDC_STATIC,201,41,88,34,
+                    WS_GROUP
+    CONTROL         "Diff/Consensus Line",IDC_DIFFCONSENSUS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,206,52,77,10
+    CONTROL         "Diff/Top Sequence",IDC_DIFFTOPSEQ,"Button",
+                    BS_AUTORADIOBUTTON,206,62,73,10
+    GROUPBOX        "Shade Style",IDC_STATIC,64,62,133,31,WS_GROUP
+    CONTROL         "Identity",IDC_CONSSUBIDENT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,68,76,36,10
+    CONTROL         "Demoted",IDC_CONSSUBDEMOTE,"Button",BS_AUTORADIOBUTTON,
+                    108,77,42,10
+    CONTROL         "Tertiary",IDC_CONSSUBTERT,"Button",BS_AUTORADIOBUTTON,
+                    156,77,37,10
+    CONTROL         "Similarity Groups Ena&bled",IDC_GENEGROUPENABLED,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,201,82,94,10
+    GROUPBOX        "Conserved and Quantify Mode Colors",IDC_STATIC,65,105,
+                    168,100,WS_GROUP
+    LTEXT           "Primary\n Colors",IDC_STATIC,79,117,28,16,NOT WS_GROUP
+    CONTROL         "",IDC_100DISP,"Button",BS_OWNERDRAW | WS_DISABLED,78,
+                    136,24,27
+    PUSHBUTTON      "Fore",IDC_CHANGEFORE100,74,166,32,14
+    PUSHBUTTON      "Back &P",IDC_CHANGEBACK100,74,183,32,14
+    LTEXT           "Secondary\nColors",IDC_STATIC,119,117,37,16,NOT 
+                    WS_GROUP
+    CONTROL         "",IDC_80DISP,"Button",BS_OWNERDRAW | WS_DISABLED,119,
+                    136,25,27
+    PUSHBUTTON      "Fore",IDC_CHANGEFORE80,115,166,33,14
+    PUSHBUTTON      "Back &S",IDC_CHANGEBACK80,115,183,33,14
+    LTEXT           "Tertiary\nColors",IDC_STATIC,159,118,34,16,NOT WS_GROUP
+    CONTROL         "",IDC_60DISP,"Button",BS_OWNERDRAW | WS_DISABLED,159,
+                    136,24,27
+    PUSHBUTTON      "Fore",IDC_CHANGEFORE60,157,166,31,14
+    PUSHBUTTON      "Back &T",IDC_CHANGEBACK60,157,183,31,14
+    LTEXT           "Base \nColors",IDC_STATIC,201,118,24,16,NOT WS_GROUP
+    CONTROL         "",IDC_0DISP,"Button",BS_OWNERDRAW | WS_DISABLED,199,136,
+                    23,27
+    PUSHBUTTON      "Fore",IDC_CHANGEFORE0,195,166,31,14
+    PUSHBUTTON      "Back &B",IDC_CHANGEBACK0,195,183,31,14
+END
+
+IDD_SEQDIALOG DIALOG DISCARDABLE  0, 0, 310, 277
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Sequence Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST1,5,15,180,260,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "D&ONE",IDOK,192,15,50,14
+    PUSHBUTTON      "Move &Up",IDC_SEQMOVEUP,192,52,50,14
+    PUSHBUTTON      "Move Dow&n",IDC_SEQMOVEDOWN,246,52,50,14
+    PUSHBUTTON      "Move to &Top",IDC_MOVETOP,192,71,50,14
+    PUSHBUTTON      "Move to &Bot.",IDC_MOVEBOTT,247,71,50,14
+    PUSHBUTTON      "D&elete",IDC_SEQDELETE,247,159,50,14
+    PUSHBUTTON      "&Details",IDC_SEQDETAILS,192,159,50,14
+    PUSHBUTTON      "&Complement",IDC_COMPLIMENT,194,213,50,14
+    PUSHBUTTON      "&Reverse",IDC_REVERSE,249,213,50,14
+    PUSHBUTTON      "Duplic&ate",IDC_DUPLICATE,194,230,50,14
+    PUSHBUTTON      "&Import",IDC_SEQIMPORT,192,141,50,14
+    PUSHBUTTON      "E&xport",IDC_SEQEXPORT,247,141,50,14
+    PUSHBUTTON      "Ras&Mol Script",IDC_WRITESCR,248,186,53,14
+    PUSHBUTTON      "&Help",ID_HELP,192,261,50,14
+    CTEXT           "235 Seq.",IDC_SEQCOUNT,194,37,44,8
+    LTEXT           "Name",IDC_STATIC,15,5,30,8
+    LTEXT           "Description",IDC_STATIC,68,5,38,8
+    PUSHBUTTON      "Sort Name",IDC_SORTNAME,192,95,50,14
+    PUSHBUTTON      "Save Sort",IDC_SAVESORT,191,113,50,14
+    PUSHBUTTON      "Load Sort",IDC_LOADSORT,247,113,50,14
+    PUSHBUTTON      "Sort Desc",IDC_SORTDESC,247,95,50,14
+    LTEXT           "234 Selected",IDC_COUNTSEL,246,37,49,7
+END
+
+IDD_SEQDETAILS DIALOG DISCARDABLE  0, 0, 194, 121
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Sequence Details"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "",IDC_INSTRUCT,28,5,126,8
+    LTEXT           "Name:",IDC_STATIC,5,22,20,8
+    EDITTEXT        IDC_SEQDETNAME,30,21,150,13,ES_AUTOHSCROLL
+    LTEXT           "Description",IDC_STATIC,77,40,40,8
+    EDITTEXT        IDC_DESCR,5,51,185,13,ES_AUTOHSCROLL
+    LTEXT           "Weight:",IDC_STATIC,30,78,26,8
+    EDITTEXT        IDC_SEQDETWEIGHT,62,75,37,13,ES_AUTOHSCROLL
+    LTEXT           "Start",IDC_STATIC,110,78,17,8
+    EDITTEXT        IDC_TEXTSTART,138,75,41,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,5,100,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,70,100,50,14
+    PUSHBUTTON      "&Help",ID_HELP,140,100,50,14
+END
+
+IDD_CONFSCORETABLES DIALOG DISCARDABLE  0, 0, 300, 210
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Score Tables"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Score Tables",IDC_STATIC,40,1,46,8
+    LISTBOX         IDC_SCORELIST,17,12,95,144,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Current Table",IDC_STATIC,16,160,96,26
+    CTEXT           "Pam120",IDC_CURRENTSCORE,19,172,76,8,NOT WS_GROUP
+    PUSHBUTTON      "&Description",IDC_SCOREDESCR,16,192,42,14
+    PUSHBUTTON      "&Set Current",IDC_SCORESETCURRENT,64,192,42,14
+    LTEXT           "Similarity Groups",IDC_STATIC,184,2,55,8
+    LISTBOX         IDC_SHADELIST,164,12,97,159,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Edit",IDC_SHADEEDIT,164,175,59,14
+    PUSHBUTTON      "&New",IDC_SHADENEW,236,175,24,14
+    PUSHBUTTON      "&Delete",IDC_SHADEDELETE,164,192,33,14
+    PUSHBUTTON      "Restore &Defaults",IDC_SHADEDEFAULT,200,192,60,14
+END
+
+IDD_CONFPRINT DIALOG DISCARDABLE  0, 0, 300, 210
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Print"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Print &Margins",IDC_STATIC,4,4,180,32,WS_GROUP
+    LTEXT           "Left:",IDC_STATIC,8,19,14,8
+    EDITTEXT        IDC_LEFTBORDER,25,18,18,13,ES_AUTOHSCROLL
+    LTEXT           "Right:",IDC_STATIC,48,19,19,8,NOT WS_GROUP
+    EDITTEXT        IDC_RIGHTBORDER,69,18,19,13,ES_AUTOHSCROLL
+    LTEXT           "Top:",IDC_STATIC,92,19,15,8,NOT WS_GROUP
+    EDITTEXT        IDC_TOPBORDER,109,18,19,13,ES_AUTOHSCROLL
+    LTEXT           "Bottom:",IDC_STATIC,133,19,24,8,NOT WS_GROUP
+    EDITTEXT        IDC_BOTTOMBORDER,160,18,19,13,ES_AUTOHSCROLL
+    GROUPBOX        "Printer &Orientation",IDC_STATIC,4,40,93,27,WS_GROUP
+    CONTROL         "Portrait",IDC_ORPORT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,9,52,35,10
+    CONTROL         "Landscape",IDC_ORLAND,"Button",BS_AUTORADIOBUTTON,47,52,
+                    47,10
+    PUSHBUTTON      "&Font",IDC_CHANGEPRINTFONT,100,44,24,23,WS_GROUP
+    GROUPBOX        "Page Number",IDC_STATIC,193,37,60,122
+    CONTROL         "No Number",IDC_PRINTPAGE0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,197,49,50,10
+    CONTROL         "Top Center",IDC_PRINTPAGE1,"Button",BS_AUTORADIOBUTTON,
+                    197,61,49,10
+    CONTROL         "Top Right",IDC_PRINTPAGE2,"Button",BS_AUTORADIOBUTTON,
+                    197,73,45,10
+    CONTROL         "Bottom Cent",IDC_PRINTPAGE3,"Button",BS_AUTORADIOBUTTON,
+                    197,85,51,10
+    CONTROL         "Bottom Right",IDC_PRINTPAGE4,"Button",
+                    BS_AUTORADIOBUTTON,197,96,54,10
+    LTEXT           "OffSet",IDC_STATIC,201,109,24,8
+    EDITTEXT        IDC_PRINTPAGEOFFSET,229,109,20,13,ES_AUTOHSCROLL
+    GROUPBOX        "Header Font Settings",IDC_STATIC,4,68,120,32
+    LTEXT           "Name:",IDC_STATIC,7,80,22,8,NOT WS_GROUP
+    LTEXT           "Courier",IDC_PRINTFONTNAME,33,80,59,8,NOT WS_GROUP
+    LTEXT           "Size:",IDC_STATIC,12,89,17,7,NOT WS_GROUP
+    LTEXT           "12",IDC_PRINTFONTPOINTS,33,89,13,8,NOT WS_GROUP
+    LTEXT           "Weight:",IDC_STATIC,51,89,26,8,NOT WS_GROUP
+    LTEXT           "Regular",IDC_PRINTFONTWEIGHT,82,89,36,8,NOT WS_GROUP
+    GROUPBOX        "Header/Footer",IDC_STATIC,4,100,120,28
+    CONTROL         "None",IDC_PRINTSTRINGFLAG0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,8,112,30,10
+    CONTROL         "Header",IDC_PRINTSTRINGFLAG1,"Button",
+                    BS_AUTORADIOBUTTON,44,112,35,10
+    CONTROL         "Footer",IDC_PRINTSTRINGFLAG2,"Button",
+                    BS_AUTORADIOBUTTON,84,112,33,10
+    GROUPBOX        "Header/Footer String",IDC_STATIC,4,130,184,28,WS_GROUP
+    EDITTEXT        IDC_PRINTSTRING,8,142,176,13,ES_AUTOHSCROLL
+    GROUPBOX        "Gene Block Position",IDC_STATIC,4,160,184,28
+    CONTROL         "Next Line",IDC_GENEBLOCKPOS0,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,8,172,43,10
+    CONTROL         "Next Page",IDC_GENEBLOCKPOS1,"Button",
+                    BS_AUTORADIOBUTTON,56,172,46,10
+    CONTROL         "Next Page if Bigger",IDC_GENEBLOCKPOS2,"Button",
+                    BS_AUTORADIOBUTTON,108,172,75,10
+    CONTROL         "Shading Only",IDC_PRINTSHADE,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,197,17,55,10
+    CONTROL         "Print Date",IDC_PRINTDATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,198,126,46,10
+    CONTROL         "Filename",IDC_PRINTFILENAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,198,141,40,10
+END
+
+IDD_CONFPROPERTY DIALOG DISCARDABLE  0, 0, 300, 210
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Property"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_PROPERTYLIST,3,3,105,127,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Level &1",IDC_PROPLEVEL1,130,5,35,14
+    PUSHBUTTON      "Level &2",IDC_PROPLEVEL2,130,20,35,14
+    PUSHBUTTON      "Level &3",IDC_PROPLEVEL3,130,35,35,14
+    PUSHBUTTON      "&New",IDC_PROPNEW,125,55,50,14
+    PUSHBUTTON      "&Delete",IDC_PROPDEL,125,70,50,14
+    PUSHBUTTON      "&Edit",IDC_PROPEDIT,125,85,50,14
+    PUSHBUTTON      "&Text Color",IDC_PROPTEXTCOLOR,125,100,50,14
+    PUSHBUTTON      "&Back Color",IDC_PROPBKCOLOR,125,115,51,15
+    GROUPBOX        "&Prop Shading Style",IDC_STATIC,196,56,72,40
+    CONTROL         "Conserved",IDC_PROPCONSERVED,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,201,68,49,10
+    CONTROL         "Shade All",IDC_PROPALL,"Button",BS_AUTORADIOBUTTON,201,
+                    80,44,10
+    PUSHBUTTON      "Level De&faults",IDC_LEVELDEFAULTS,176,4,60,14,WS_GROUP
+END
+
+IDD_PROPEDITDLG DIALOG DISCARDABLE  0, 0, 238, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit/Add Property Group"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PROPEDITCONT,20,25,216,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,9,47,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,66,47,50,14
+    LTEXT           "  Group\nNumber",IDC_STATIC,6,6,26,16
+    LTEXT           "11",IDC_PROPEDITNUM,8,28,8,8
+    LTEXT           "Group Contents",IDC_STATIC,38,12,55,8
+    PUSHBUTTON      "&Help",ID_HELP,127,47,50,14
+END
+
+IDD_TITLINGF DIALOG DISCARDABLE  0, 0, 282, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Titling Facility"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "What was Used to Create the Alignment? (Mandatory)",
+                    IDC_STATIC,42,140,192,70
+    LTEXT           "The Program:",IDC_STATIC,47,156,82,8
+    EDITTEXT        IDC_TITLEPROGRAM,133,153,94,13,ES_AUTOHSCROLL
+    LTEXT           "The Scoring Matrix:",IDC_STATIC,47,169,82,8
+    EDITTEXT        IDC_TITLESCORE,133,167,94,13,ES_AUTOHSCROLL
+    LTEXT           "The Open Gap penalty:",IDC_STATIC,47,183,82,8
+    EDITTEXT        IDC_TITLEOPENGAP,133,180,94,13,ES_AUTOHSCROLL
+    LTEXT           "The Extend Gap penalty:",IDC_STATIC,47,196,82,8
+    EDITTEXT        IDC_TITLEEXTENDGAP,133,194,94,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TITLEEDIT,3,16,276,116,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    DEFPUSHBUTTON   "&OK",IDOK,23,216,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,116,216,50,14
+    LTEXT           "The Comment Section of the File.",IDC_STATIC,80,5,110,8
+    PUSHBUTTON      "&Help",ID_HELP,208,216,50,14
+END
+
+IDD_COLORBAR DIALOG DISCARDABLE  0, 0, 111, 117
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Selection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_COLORLIST,61,5,38,79,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "&OK",IDOK,13,96,32,14
+    CONTROL         "",IDC_DISP,"Button",BS_OWNERDRAW | WS_DISABLED,17,15,24,
+                    27
+    PUSHBUTTON      "&Text",IDC_CHANGETEXT,13,50,32,14
+    PUSHBUTTON      "&Back",IDC_CHANGEBACK,13,70,32,14
+    PUSHBUTTON      "&Help",ID_HELP,59,96,42,14
+END
+
+IDD_PHYLOGEN DIALOG DISCARDABLE  0, 0, 327, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Phylogenetic Tree"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PHYLOEDIT,3,4,321,150,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,4,172,39,14
+    PUSHBUTTON      "Cancel",IDCANCEL,51,172,39,14
+    PUSHBUTTON      "&Export",IDC_PHYLOEXPORT,98,172,39,14
+    PUSHBUTTON      "&Import",IDC_PHYLOIMPORT,145,172,39,14
+    PUSHBUTTON      "&Copy",IDC_PHYLOCOPY,192,172,39,14
+    PUSHBUTTON      "&Paste",IDC_PHYLOPASTE,237,172,39,14
+    PUSHBUTTON      "&Help",ID_HELP,284,172,39,14
+END
+
+IDD_SHOWTABLE DIALOG DISCARDABLE  0, 0, 312, 247
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Current Score Table Values"
+FONT 10, "Courier"
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,60,232,50,14
+    EDITTEXT        IDC_SHOWEDIT,3,2,307,226,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "&Copy",IDC_SHOWTABLECOPY,144,231,50,14
+    PUSHBUTTON      "&Help",ID_HELP,224,231,50,14
+END
+
+IDD_SCORECANDIALOG DIALOG DISCARDABLE  0, 0, 127, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,38,29,50,14
+    LTEXT           "Hit Cancel to Stop Scoring",IDC_STATIC,22,10,90,10
+    CTEXT           "Columns = 0, Trees = 0",IDC_SHOWSTATUS,2,55,123,8
+    PUSHBUTTON      "&Help",ID_HELP,36,76,50,14
+END
+
+IDD_GROUPPROP DIALOG DISCARDABLE  0, 0, 300, 207
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Groups"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Sequences for Group",IDC_STATIC,43,3,75,8
+    LISTBOX         IDC_SEQLIST,2,12,180,191,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Group Control",IDC_STATIC,185,0,112,58
+    COMBOBOX        IDC_GROUPCOMBO,190,12,102,120,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "&Modify ALL Groups",IDC_MODIFYALL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,203,29,73,10
+    PUSHBUTTON      "&New Group",IDC_NEWGROUP,189,41,50,14
+    PUSHBUTTON      "&Delete Group",IDC_DELETEGROUP,242,41,50,14
+    GROUPBOX        "Current Group Color",IDC_STATIC,185,59,112,44
+    PUSHBUTTON      "&Text Color",IDC_GROUPTEXTCOLOR,189,70,50,14
+    PUSHBUTTON      "&Back Color",IDC_GROUPBACKCOLOR,189,86,50,14
+    CONTROL         "",IDC_GROUPCOLOR,"Button",BS_OWNERDRAW | WS_DISABLED,
+                    254,68,26,31
+    GROUPBOX        "Group Sequences",IDC_STATIC,185,104,112,29
+    PUSHBUTTON      "&Add",IDC_SEQADD,189,115,50,14
+    PUSHBUTTON      "&Remove",IDC_REMOVESEQ,242,115,50,14
+    CONTROL         "&Color Sequence Names",IDC_COLORSEQNAMES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,186,136,89,10
+    LTEXT           "Group Cons Level:",IDC_STATIC,188,161,67,8
+    EDITTEXT        IDC_GROUPCONSLEVEL,260,159,21,13,ES_AUTOHSCROLL
+    LTEXT           "PCR Similarities:",IDC_STATIC,188,176,54,8
+    GROUPBOX        "Group Contrast/Cons. Settings",IDC_STATIC,185,148,111,
+                    56
+    LTEXT           "PCR Maximum Level:",IDC_STATIC,188,191,69,8
+    EDITTEXT        IDC_GROUPPCRLEVEL,259,188,22,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_GROUPPCRSIM,244,174,48,59,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_STRUCTUREPROP DIALOG DISCARDABLE  0, 0, 300, 210
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Structure"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Select Master Sequence",IDC_STATIC,208,12,85,8
+    COMBOBOX        IDC_COMBOMASTER,209,26,85,155,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_DataTypeList,4,4,194,204,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Load Datafile",IDC_STCLOADDATA,208,48,85,15
+    PUSHBUTTON      "Data Set Details",IDC_DATASETDET,208,72,85,14
+END
+
+IDD_DISPLAYGROUPNAME DIALOG DISCARDABLE  0, 0, 135, 62
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Group Name Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_GROUPNAME,12,19,108,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,12,40,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,72,40,50,14
+    LTEXT           "Enter Name of Group",IDC_STATIC,12,4,76,8
+END
+
+IDD_GRAPHSETUP DIALOG DISCARDABLE  0, 0, 296, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DStat Graph Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PAGEWIDTH,61,7,40,12,ES_AUTOHSCROLL
+    LTEXT           "Page Height """,IDC_STATIC,10,24,47,8
+    EDITTEXT        IDC_PAGEHEIGHT,61,22,40,12,ES_AUTOHSCROLL
+    LTEXT           "X Border %",IDC_STATIC,20,39,37,8
+    EDITTEXT        IDC_XBORDERPCT,61,37,40,12,ES_AUTOHSCROLL
+    LTEXT           "Y Border %",IDC_STATIC,19,54,38,8
+    EDITTEXT        IDC_YBORDERPCT,61,52,40,12,ES_AUTOHSCROLL
+    LTEXT           "DStat X %",IDC_STATIC,124,9,36,8
+    EDITTEXT        IDC_DSTATXPCT,164,7,40,12,ES_AUTOHSCROLL
+    LTEXT           "DStat Y %",IDC_STATIC,124,24,37,8
+    EDITTEXT        IDC_DSTATYPCT,164,22,40,12,ES_AUTOHSCROLL
+    LTEXT           "KSpr X %",IDC_STATIC,125,40,34,8
+    EDITTEXT        IDC_KSPRXPCT,164,37,40,12,ES_AUTOHSCROLL
+    LTEXT           "KSpr Y %",IDC_STATIC,125,55,34,8
+    EDITTEXT        IDC_KSPRYPCT,164,52,40,12,ES_AUTOHSCROLL
+    LTEXT           "Chart Title",IDC_STATIC,7,72,35,8
+    EDITTEXT        IDC_CHARTTITLE,45,69,245,12,ES_AUTOHSCROLL
+    LTEXT           "Y Axis Title",IDC_STATIC,7,87,36,8
+    EDITTEXT        IDC_YAXISTITLE,45,84,245,12,ES_AUTOHSCROLL
+    LTEXT           "X Axis Title",IDC_STATIC,7,101,36,8
+    EDITTEXT        IDC_XAXISTITLE,45,99,245,12,ES_AUTOHSCROLL
+    LTEXT           "Chart Title %",IDC_STATIC,32,119,44,8
+    EDITTEXT        IDC_CHARTTITLEPCT,81,117,23,12,ES_AUTOHSCROLL
+    LTEXT           "Y Axis Title %",IDC_STATIC,122,119,44,8
+    EDITTEXT        IDC_YAXISTITLEPCT,171,116,23,12,ES_AUTOHSCROLL
+    LTEXT           "X Axis Title %",IDC_STATIC,207,118,44,8
+    EDITTEXT        IDC_XAXISTITLEPCT,256,116,23,12,ES_AUTOHSCROLL
+    LTEXT           "Line Width",IDC_STATIC,7,139,37,8
+    EDITTEXT        IDC_LINEWIDTH,50,138,40,12,ES_AUTOHSCROLL
+    LTEXT           "X Axis Rounding",IDC_STATIC,103,139,56,8
+    EDITTEXT        IDC_XAXISROUNDING,163,138,40,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Text Font",IDC_CHGFONT,239,137,51,14
+    LTEXT           "Red Count:",IDC_NAME1,220,7,38,8
+    EDITTEXT        IDC_SET1COUNT,265,4,23,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "Blue Count:",IDC_NAME2,218,20,38,8
+    EDITTEXT        IDC_SET2COUNT,264,19,23,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "Red Set Larger.",IDC_TSIDE1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,215,35,69,10
+    CONTROL         "Blue Set Larger.",IDC_TSIDE2,"Button",
+                    BS_AUTORADIOBUTTON,215,46,63,10
+    CONTROL         "Either Set Larger.",IDC_TSIDE3,"Button",
+                    BS_AUTORADIOBUTTON,215,57,68,10
+    DEFPUSHBUTTON   "OK",IDOK,24,164,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,116,164,50,14
+    LTEXT           "Page Width """,IDC_STATIC,12,9,45,8
+    PUSHBUTTON      "&Help",ID_HELP,208,164,50,14
+END
+
+IDD_STCDATADET DIALOG DISCARDABLE  0, 0, 169, 231
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Structure Data Details"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,110,5,50,14
+    LISTBOX         IDC_DATADETLIST,5,5,95,220,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "List Order is Undefined.",IDC_STATIC,115,25,44,21
+END
+
+IDD_SEQUENCEINPUT DIALOG DISCARDABLE  0, 0, 289, 221
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Sequence Input"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name:",IDC_STATIC,11,7,23,8
+    EDITTEXT        IDC_SEQUENCENAME,36,5,56,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Paste",IDC_PASTE,108,4,50,14
+    LTEXT           "Descr:",IDC_STATIC,8,27,23,8
+    EDITTEXT        IDC_DESCR,35,25,245,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SEQEDIT,0,45,287,172,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN
+    DEFPUSHBUTTON   "OK",IDOK,168,4,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,224,4,50,14
+END
+
+IDD_GROUPSELECT DIALOG DISCARDABLE  0, 0, 242, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Select One of Each"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_GROUPLIST,4,2,86,164,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_OTHERLIST,153,2,86,164,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,96,64,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,96,88,50,14
+    LTEXT           "Select One\nOn the Right\n And Another\nOn The Left",
+                    IDC_STATIC,97,8,49,36
+    PUSHBUTTON      "&Help",ID_HELP,96,113,50,14
+END
+
+IDD_FINDREPLACE DIALOG DISCARDABLE  0, 0, 199, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Substitute String"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Find:",IDC_STATIC,17,43,16,8
+    EDITTEXT        IDC_FINDSTRING,37,40,156,13,ES_AUTOHSCROLL
+    LTEXT           "Replace:",IDC_STATIC,5,67,30,8
+    EDITTEXT        IDC_REPLACE,37,64,156,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,10,90,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,72,90,50,14
+    LTEXT           "Find and Replace strings must be the same length. Strings are case sensitive.",
+                    IDC_STATIC,30,10,160,20
+    PUSHBUTTON      "&Help",ID_HELP,135,90,50,14
+END
+
+IDD_CHEMPROP DIALOG DISCARDABLE  0, 0, 300, 210
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "PhysioChem"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Chemical Props. Colors",IDC_STATIC,18,0,76,8,NOT 
+                    WS_GROUP
+    LISTBOX         IDC_CHEMPROP,16,12,81,100,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Property attributes",IDC_STATIC,15,116,83,88
+    CONTROL         "Displayed",IDC_PROPENAB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,24,128,45,11
+    PUSHBUTTON      "Text Color",IDC_CHEMPROPFORE,24,140,50,14
+    PUSHBUTTON      "Back Color",IDC_CHEMPROPBACK,24,160,50,14
+    PUSHBUTTON      "Description",IDC_DESCRIPTION,24,180,50,14
+    GROUPBOX        "Coloring",IDC_STATIC,108,12,68,48,WS_GROUP
+    CONTROL         "Properties",IDC_SHOWPROPERTY,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,116,25,47,10
+    CONTROL         "Conservation",IDC_SHOWCONSERVE,"Button",
+                    BS_AUTORADIOBUTTON,116,41,57,10
+    LTEXT           "Props. Cons. Colors",IDC_STATIC,109,68,65,8
+    LISTBOX         IDC_PROPCONS,109,81,64,32,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Text Color",IDC_PROPCONSFORE,116,116,50,14
+    PUSHBUTTON      "Back Color",IDC_PROPCONSBACK,116,136,50,14
+    GROUPBOX        "Cysteine",IDC_STATIC,188,16,63,40
+    CONTROL         "Oxidized",IDC_CYSTEINE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,196,28,40,10
+    CONTROL         "Reduced",IDC_REDUCED,"Button",BS_AUTORADIOBUTTON,196,40,
+                    43,10
+END
+
+IDD_IMPORTTYPE DIALOG DISCARDABLE  0, 0, 135, 199
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Import Type"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Select Input Device",IDC_STATIC,5,4,66,8
+    CONTROL         "File",IDC_FILE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,6,14,35,10
+    CONTROL         "Clipboard",IDC_CLIP,"Button",BS_AUTORADIOBUTTON,48,15,
+                    42,10
+    LTEXT           "Please Select The Type of File.",IDC_STATIC,4,36,104,8
+    CONTROL         "Fasta (Pearson)",IDC_IMPORTTYPE0,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,4,52,64,10
+    CONTROL         "Clustal (ALN)",IDC_IMPORTTYPE2,"Button",
+                    BS_AUTORADIOBUTTON,4,66,53,10
+    CONTROL         "Phylip",IDC_IMPORTTYPE5,"Button",BS_AUTORADIOBUTTON,4,
+                    81,53,10
+    CONTROL         "Fasta (DNA *.nt)",IDC_IMPORTTYPE7,"Button",
+                    BS_AUTORADIOBUTTON,4,96,65,10
+    CONTROL         "PIR",IDC_IMPORTTYPE3,"Button",BS_AUTORADIOBUTTON,79,52,
+                    35,10
+    CONTROL         "GCG (MSF)",IDC_IMPORTTYPE4,"Button",BS_AUTORADIOBUTTON,
+                    79,66,48,10
+    CONTROL         "Text",IDC_IMPORTTYPE6,"Button",BS_AUTORADIOBUTTON,79,81,
+                    35,10
+    CONTROL         "IUPAC Text",IDC_IUPAC,"Button",BS_AUTORADIOBUTTON,79,96,
+                    49,10
+    CONTROL         "GenBank",IDC_GENBANK,"Button",BS_AUTORADIOBUTTON,79,112,
+                    43,10
+    DEFPUSHBUTTON   "Import",IDIMPORT,5,151,50,14,WS_GROUP
+    PUSHBUTTON      "Input",IDC_INPUT,65,151,50,14
+    PUSHBUTTON      "Done",IDCANCEL,65,172,50,14
+    PUSHBUTTON      "&Help",ID_HELP,4,172,50,14
+END
+
+IDD_SEARCH DIALOG DISCARDABLE  0, 0, 300, 213
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Search"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SEARCHLIST,4,4,172,204,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Edit",IDC_EDIT,184,4,50,14
+    PUSHBUTTON      "&Delete",IDC_DELETE,184,20,50,14
+    PUSHBUTTON      "&New",IDC_NEW,184,36,50,14
+    PUSHBUTTON      "&Text Color",IDC_TEXTCOLOR,184,52,50,14
+    PUSHBUTTON      "&Back Color",IDC_BACKCOLOR,184,68,50,14
+    PUSHBUTTON      "Move &Up",IDC_MOVEUP,184,84,50,14
+    PUSHBUTTON      "Move Do&wn",IDC_MOVEDOWN,184,100,50,14
+    CONTROL         "Pr&oSite",IDC_PROSITE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,244,12,40,10
+    CONTROL         "ReB&ase",IDC_REBASE,"Button",BS_AUTORADIOBUTTON,244,25,
+                    40,10
+    GROUPBOX        "Syntax",IDC_STATIC,240,2,52,36,WS_GROUP
+    PUSHBUTTON      "&ProSite",IDC_LOADFILE,243,55,45,14
+    PUSHBUTTON      "&ReBase",IDC_LOADREBASE,243,74,45,14
+    GROUPBOX        "Check File",IDC_STATIC,240,43,52,50
+    PUSHBUTTON      "Export List",IDC_WRITERE,181,176,48,14
+    PUSHBUTTON      "Overlap",IDC_OVERLAP,182,194,48,14
+    CONTROL         "Enabled",IDC_ENABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,185,121,38,10
+END
+
+IDD_SRCHDLG DIALOG DISCARDABLE  0, 0, 298, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Search Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name:",IDC_STATIC,0,16,24,8
+    EDITTEXT        IDC_NAME,24,12,268,13,ES_AUTOHSCROLL
+    LTEXT           "Motif:",IDC_STATIC,0,36,20,8
+    EDITTEXT        IDC_MOTIF,24,32,268,13,ES_AUTOHSCROLL
+    LTEXT           "Descr:",IDC_STATIC,0,56,21,8
+    EDITTEXT        IDC_DECRIP,24,52,268,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,23,76,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,95,77,50,14
+    PUSHBUTTON      "&Help",ID_HELP,163,76,50,14
+    CONTROL         "Enabled",IDC_ENABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,237,78,38,10
+END
+
+IDD_PDBDIALOG DIALOG DISCARDABLE  0, 0, 191, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Rasmol Script Generation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Coloring Script Options",IDC_STATIC,4,0,88,140
+    CONTROL         "Clear All",IDC_CLEARALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,16,40,10
+    CONTROL         "Safe Mode",IDC_SAFEMODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,28,47,10
+    CONTROL         "Include Base Colors",IDC_INCLUDEBASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,40,75,10
+    CONTROL         "All Atoms",IDC_ALL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,12,52,72,10
+    CONTROL         "Backbone Only",IDC_BACKBONE,"Button",BS_AUTORADIOBUTTON,
+                    12,64,72,10
+    CONTROL         "Sidechain Only",IDC_SIDEONLY,"Button",
+                    BS_AUTORADIOBUTTON,12,76,72,10
+    CONTROL         "Group Sel Scripts",IDC_GROUPSEL,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,13,94,72,10
+    LTEXT           "PDB OffSet",IDC_STATIC,12,115,40,8
+    EDITTEXT        IDC_PDBOFFSET,56,113,16,13,ES_AUTOHSCROLL
+    GROUPBOX        "Side Chain Options",IDC_STATIC,95,0,90,209
+    CONTROL         "Show SideChains",IDC_DISPSIDE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,101,12,68,10
+    LTEXT           "Show BackBone As:",IDC_STATIC,100,31,75,8
+    COMBOBOX        IDC_COMBOBACK,100,41,80,82,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Show SideChains As:",IDC_STATIC,101,74,75,8
+    COMBOBOX        IDC_SIDEDISP,101,85,80,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Select SideChains",IDC_STATIC,102,102,61,8
+    LISTBOX         IDC_SIDECOLORLIST,101,113,80,92,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,21,150,51,14
+    PUSHBUTTON      "Cancel",IDCANCEL,21,170,51,14
+    PUSHBUTTON      "&Help",ID_HELP,21,190,50,14
+    CONTROL         "Ex Carbonyl Oxygens",IDC_EXCLUDEO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,99,58,80,10
+    GROUPBOX        "",IDC_STATIC,95,24,90,49
+END
+
+IDD_HTMLPICK DIALOG DISCARDABLE  0, 0, 223, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "HTML Output Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Table/Background Colors",IDC_FULLTABLE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,16,12,94,10
+    CONTROL         "Te&xt Colors Only",IDC_TEXTONLY,"Button",
+                    BS_AUTORADIOBUTTON,16,28,67,10
+    CONTROL         "F&ull Web Page",IDC_FULLWEB,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,128,12,58,10
+    CONTROL         "&Alignment HTML Only",IDC_HTMLONLY,"Button",
+                    BS_AUTORADIOBUTTON,128,28,81,10
+    DEFPUSHBUTTON   "OK",IDOK,12,52,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,84,52,50,14
+    PUSHBUTTON      "&Help",ID_HELP,156,52,50,14
+    GROUPBOX        "",IDC_STATIC,4,3,108,41
+    GROUPBOX        "",IDC_STATIC,120,3,95,42
+END
+
+IDD_REFILT DIALOG DISCARDABLE  0, 0, 230, 149
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Rebase Filter Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,25,128,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,94,128,50,14
+    LTEXT           "Min Length",IDC_STATIC,38,24,38,8
+    EDITTEXT        IDC_MINLEN,84,24,24,13,ES_AUTOHSCROLL
+    LTEXT           "Max Length",IDC_STATIC,37,40,40,8
+    EDITTEXT        IDC_MAXLEN,84,40,24,13,ES_AUTOHSCROLL
+    LTEXT           "Exclude Set",IDC_STATIC,36,56,40,8
+    EDITTEXT        IDC_EXCLUDE,84,56,24,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "Include Set",IDC_STATIC,37,72,39,8
+    EDITTEXT        IDC_INCLUDE,84,72,24,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "Exclude Ambiguous",IDC_NONAMBIG,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,132,24,76,10
+    CONTROL         "Palindromic Only",IDC_PALIN,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,142,40,65,10
+    LTEXT           "Max Occurances/Seq",IDC_STATIC,6,90,72,8
+    EDITTEXT        IDC_OCCUR,84,88,24,12,ES_AUTOHSCROLL
+    CONTROL         "Exclude Duplicates",IDC_EXCLDUP,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,132,56,75,10
+    PUSHBUTTON      "&Help",ID_HELP,163,128,50,14
+END
+
+IDD_SRCHREP DIALOG DISCARDABLE  0, 0, 150, 177
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Search Report"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,10,155,34,14
+    PUSHBUTTON      "Cancel",IDCANCEL,55,155,50,14
+    CONTROL         "Cut Sites Report",IDC_CUTSITES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,12,136,10
+    CONTROL         "Sorted Fragments Report",IDC_SORTEDFRAG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,28,136,10
+    CONTROL         "Unique Fragment Lengths Report",IDC_UNIQUEFRAG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,44,136,10
+    EDITTEXT        IDC_UNIQFRAGPER,113,59,16,13,ES_AUTOHSCROLL
+    LTEXT           "Unique Fragment Percentage",IDC_STATIC,12,61,98,8
+    CONTROL         "Group Specific Fragment Lengths",IDC_GROUPFRAG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,80,136,10
+    EDITTEXT        IDC_SIMPER,113,96,16,13,ES_AUTOHSCROLL
+    LTEXT           "Similarity Percentage",IDC_STATIC,39,98,71,8
+    EDITTEXT        IDC_UNIQPER,113,112,16,13,ES_AUTOHSCROLL
+    LTEXT           "Unique Percentage",IDC_STATIC,45,114,65,8
+    CONTROL         "Sorted Cut Sites Report",IDC_SORTEDCUT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,132,136,10
+    PUSHBUTTON      "&Help",ID_HELP,114,155,28,14
+END
+
+IDD_CONFIDENT DIALOG DISCARDABLE  0, 0, 300, 210
+STYLE WS_CHILD | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Identity"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LISTSEQUENCE,32,1,132,206,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    LTEXT           "Select Sequences to be compared for identities.",
+                    IDC_STATIC,172,4,108,20
+    PUSHBUTTON      "Sel/Deselect Seq.",IDC_TOGGLE,176,40,88,14
+    GROUPBOX        "Identity Residue Colors",IDC_STATIC,174,68,120,40
+    PUSHBUTTON      "Text Color",IDC_TEXTCOLOR,180,84,50,14
+    PUSHBUTTON      "Back Color",IDC_BACKCOLOR,237,84,50,14
+    GROUPBOX        "Display Style",IDC_STATIC,174,122,121,41
+    CONTROL         "Show All Identities.",IDC_SHOWALL,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,185,135,74,10
+    CONTROL         "Show Conserved Identities.",IDC_SHOWLEVEL,"Button",
+                    BS_AUTORADIOBUTTON,185,147,100,10
+END
+
+IDD_EXPORTDLG DIALOG DISCARDABLE  0, 0, 203, 237
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Export Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Select Sequences",IDC_STATIC,120,5,60,8
+    CONTROL         "Select All",IDC_SELALLSEQ,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,125,20,42,10
+    CONTROL         "Select From List",IDC_SELLISTSEQ,"Button",
+                    BS_AUTORADIOBUTTON,125,30,64,10
+    LISTBOX         IDC_LISTSEQUENCE,2,2,109,232,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "Select Export Device",IDC_STATIC,120,45,70,8
+    CONTROL         "File",IDC_FILE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,125,60,35,10
+    CONTROL         "Clipboard",IDC_CLIP,"Button",BS_AUTORADIOBUTTON,125,70,
+                    42,10
+    LTEXT           "Type of File.",IDC_STATIC,120,85,42,8
+    CONTROL         "Fasta (Pearson)",IDC_EXPORTTYPE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,125,97,64,10
+    CONTROL         "Clustal (ALN)",IDC_IMPORTTYPE2,"Button",
+                    BS_AUTORADIOBUTTON,125,107,53,10
+    CONTROL         "Phylip",IDC_IMPORTTYPE5,"Button",BS_AUTORADIOBUTTON,125,
+                    116,53,10
+    CONTROL         "PIR",IDC_IMPORTTYPE3,"Button",BS_AUTORADIOBUTTON,125,
+                    127,35,10
+    CONTROL         "Text",IDC_IMPORTTYPE6,"Button",BS_AUTORADIOBUTTON,125,
+                    137,26,10
+    CONTROL         "Text No Gaps",IDC_TEXTNOGAP,"Button",BS_AUTORADIOBUTTON,
+                    125,147,56,10
+    CONTROL         "Fasta (DNA *.nt)",IDC_EXNT,"Button",BS_AUTORADIOBUTTON,
+                    125,157,65,10
+    DEFPUSHBUTTON   "Export",IDEXPORT,125,175,50,14,WS_GROUP
+    PUSHBUTTON      "Done",IDCANCEL,125,194,50,14
+    PUSHBUTTON      "&Help",ID_HELP,125,215,50,14
+END
+
+IDD_LOGODDS DIALOG DISCARDABLE  0, 0, 300, 213
+STYLE WS_CHILD | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "LogOdds"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Meme File",IDC_MEME,137,7,50,14
+    PUSHBUTTON      "&Edit",IDC_EDIT,137,24,50,14
+    PUSHBUTTON      "&Delete",IDC_DELETE,137,41,50,14
+    PUSHBUTTON      "&Text Color",IDC_TEXTCOLOR,137,58,50,14
+    PUSHBUTTON      "&Back Color",IDC_BACKCOLOR,137,75,50,14
+    PUSHBUTTON      "Overlap",IDC_OVERLAP,137,92,51,14
+    GROUPBOX        "Disp Mode",IDC_STATIC,192,4,48,59
+    CONTROL         "Bayes",IDC_MODE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,195,16,31,10
+    CONTROL         "Best N",IDC_MODE2,"Button",BS_AUTORADIOBUTTON,195,27,33,
+                    10
+    CONTROL         "Bet Than",IDC_MODE3,"Button",BS_AUTORADIOBUTTON,195,38,
+                    41,10
+    CONTROL         "Tri Level",IDC_MODE4,"Button",BS_AUTORADIOBUTTON,195,49,
+                    40,10
+    LTEXT           "Best N",IDC_STATIC,200,66,23,8
+    EDITTEXT        IDC_BESTN,200,77,25,13,ES_AUTOHSCROLL
+    LTEXT           "Better Than",IDC_STATIC,193,95,40,8
+    EDITTEXT        IDC_BETTERTHAN,201,106,25,13,ES_AUTOHSCROLL
+    GROUPBOX        "Output Set",IDC_STATIC,241,4,58,180
+    GROUPBOX        "Background",IDC_STATIC,245,16,50,32
+    CONTROL         "Static",IDC_BACKGROUND2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,249,26,32,10
+    CONTROL         "Align",IDC_BACKGROUND,"Button",BS_AUTORADIOBUTTON,249,
+                    36,30,10
+    LTEXT           "Pseudo Tab.",IDC_STATIC,248,51,43,8
+    COMBOBOX        IDC_OUTTAB,244,62,53,188,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Pseudo Mult.",IDC_STATIC,247,79,44,8
+    EDITTEXT        IDC_MPC,251,89,34,13,ES_AUTOHSCROLL
+    CONTROL         "Enabled",IDC_ENABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,139,126,38,10
+    CONTROL         "No Overlap",IDC_ALLOWOV,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,139,139,48,10
+    GROUPBOX        "Tri Levels",IDC_STATIC,191,122,43,62
+    LTEXT           "1:",IDC_STATIC,197,134,8,8
+    EDITTEXT        IDC_TRILEVEL1,207,134,20,13,ES_AUTOHSCROLL
+    LTEXT           "2:",IDC_STATIC,197,153,8,8
+    EDITTEXT        IDC_TRILEVEL2,207,150,20,13,ES_AUTOHSCROLL
+    LTEXT           "3:",IDC_STATIC,197,169,8,8
+    EDITTEXT        IDC_TRILEVEL3,207,166,20,13,ES_AUTOHSCROLL
+    LISTBOX         IDC_MOTIFLIST,8,2,123,204,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_STATICT,253,164,44,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STATICG,253,146,44,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STATICC,252,128,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STATICA,252,110,45,13,ES_AUTOHSCROLL
+    LTEXT           "T:",IDC_STATIC,244,166,8,8
+    LTEXT           "G:",IDC_STATIC,244,148,9,8
+    LTEXT           "C:",IDC_STATIC,244,131,8,8
+    LTEXT           "A:",IDC_STATIC,244,113,8,8
+END
+
+IDD_LOGDLG DIALOG DISCARDABLE  0, 0, 202, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "LogOdds Entry Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Motif:",IDC_STATIC,0,36,20,8
+    EDITTEXT        IDC_MOTIF,24,32,171,13,ES_AUTOHSCROLL
+    LTEXT           "Descr:",IDC_STATIC,0,56,21,8
+    EDITTEXT        IDC_DECRIP,24,52,170,13,ES_AUTOHSCROLL
+    LTEXT           "Bayes:",IDC_STATIC,20,76,23,8
+    EDITTEXT        IDC_BAYES,46,74,35,13,ES_AUTOHSCROLL
+    CONTROL         "Enabled",IDC_ENABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,114,76,38,10
+    DEFPUSHBUTTON   "OK",IDOK,18,95,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,77,95,50,14
+    PUSHBUTTON      "&Help",ID_HELP,138,95,50,14
+    LTEXT           "Name:",IDC_STATIC,0,16,24,8
+    EDITTEXT        IDC_NAME,24,12,171,13,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_SEQSEL DIALOG DISCARDABLE  0, 0, 187, 238
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Write Log Odds Matrix"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LISTSEQUENCE,4,2,109,232,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Output Set.",IDC_STATIC,120,5,63,169
+    GROUPBOX        "Background",IDC_STATIC,125,14,50,32
+    CONTROL         "Static",IDC_BACKGROUND2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,129,24,32,10
+    CONTROL         "Align",IDC_BACKGROUND,"Button",BS_AUTORADIOBUTTON,129,
+                    34,30,10
+    LTEXT           "Pseudo Tab.",IDC_STATIC,131,49,43,8
+    COMBOBOX        IDC_OUTTAB,124,60,53,153,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Pseudo Mult.",IDC_STATIC,130,76,44,8
+    EDITTEXT        IDC_MPC,133,87,34,13,ES_AUTOHSCROLL
+    LTEXT           "A:",IDC_STATIC,123,107,8,8
+    EDITTEXT        IDC_STATICA,133,105,42,13,ES_AUTOHSCROLL
+    LTEXT           "C:",IDC_STATIC,123,124,8,8
+    EDITTEXT        IDC_STATICC,133,122,42,13,ES_AUTOHSCROLL
+    LTEXT           "G:",IDC_STATIC,123,142,9,8
+    EDITTEXT        IDC_STATICG,133,139,42,13,ES_AUTOHSCROLL
+    LTEXT           "T:",IDC_STATIC,123,158,8,8
+    EDITTEXT        IDC_STATICT,133,156,42,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Done",IDOK,125,180,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,198,50,14
+    PUSHBUTTON      "&Help",ID_HELP,124,216,50,14
+END
+
+IDD_MOTSEQ DIALOG DISCARDABLE  0, 0, 289, 276
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Motif Sequence Selection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,250,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,250,50,14
+    LISTBOX         IDC_LISTSEQUENCE,170,20,110,215,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LISTBOX         IDC_LISTMOTIF,5,20,155,215,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Select one Motif and Any Sequences.",IDC_STATIC,87,5,
+                    124,8
+    PUSHBUTTON      "&Help",ID_HELP,210,250,50,14
+END
+
+IDD_FIND DIALOG DISCARDABLE  0, 0, 189, 241
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Find Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Find String",IDC_STATIC,120,6,38,8
+    LISTBOX         IDC_LISTSEQUENCES,5,5,85,230,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FINDSTR,93,20,93,13,ES_AUTOHSCROLL
+    CONTROL         "Find after cursor",IDC_FINDFROM,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,95,45,65,10
+    CONTROL         "Find before cursor",IDC_FINDBEFORE,"Button",
+                    BS_AUTORADIOBUTTON,95,60,70,10
+    CONTROL         "Find from start of seq",IDC_FINDSTART,"Button",
+                    BS_AUTORADIOBUTTON,95,75,82,10
+    CONTROL         "Find all and shade",IDC_FINDALL,"Button",
+                    BS_AUTORADIOBUTTON,95,90,71,10
+    PUSHBUTTON      "Text Color",IDC_RGBTEXT,95,105,39,14,WS_GROUP
+    PUSHBUTTON      "Back Color",IDC_RGBBACK,140,105,41,14
+    LTEXT           "Mismatches",IDC_STATIC,123,132,39,8
+    EDITTEXT        IDC_MISMATCH,165,130,15,13,ES_AUTOHSCROLL
+    LTEXT           "Insertions/Deletions",IDC_STATIC,95,152,67,8
+    EDITTEXT        IDC_INSDEL,165,150,15,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "FIND",IDOK,115,184,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,115,203,50,14
+    PUSHBUTTON      "&Help",ID_HELP,115,222,50,14
+END
+
+IDD_SELARRSEQ DIALOG DISCARDABLE  0, 0, 187, 301
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Arrangment Sequences"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,285,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,65,285,50,14
+    LISTBOX         IDC_LIST1,3,3,181,260,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&DeSelect",IDC_DESEL,105,265,50,14
+    PUSHBUTTON      "&Complement",IDC_COMPLEMENT,35,265,50,14
+    PUSHBUTTON      "&Help",ID_HELP,130,285,50,14
+END
+
+IDD_SELPROJ DIALOG DISCARDABLE  0, 0, 79, 196
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Other Project"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Select Other Project",IDC_STATIC,7,5,67,8
+    LISTBOX         IDC_PROJLIST,5,17,70,120,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,10,142,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,10,160,50,14
+    PUSHBUTTON      "&Help",ID_HELP,10,179,50,14
+END
+
+IDD_DNATRANS DIALOG DISCARDABLE  0, 0, 211, 247
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "DNA/RNA Translation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBCODON,2,2,205,194,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Codon",IDC_STATIC,4,18,24,8
+    LTEXT           "Prot",IDC_STATIC,34,18,17,8
+    LTEXT           "Start",IDC_STATIC,56,18,18,8
+    LISTBOX         IDC_LISTCODON,1,28,76,216,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Translation Options",IDC_STATIC,88,24,120,133
+    CONTROL         "Translate Fixed Frames",IDC_TRANSFIXED,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,96,40,89,10
+    CONTROL         "Translate Float Frames",IDC_TRANSFLOAT,"Button",
+                    BS_AUTORADIOBUTTON,99,117,87,10
+    CONTROL         "Translate All Columns",IDC_TRANSCOLUMNS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,112,57,83,10
+    CONTROL         "Translate After Start",IDC_TRANSFIXEDSTART,"Button",
+                    BS_AUTORADIOBUTTON,112,92,82,10
+    CONTROL         "Shift 0",IDC_SHIFT0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,125,75,35,10
+    CONTROL         "1",IDC_SHIFT1,"Button",BS_AUTORADIOBUTTON,163,75,18,10
+    CONTROL         "2",IDC_SHIFT2,"Button",BS_AUTORADIOBUTTON,185,75,17,10
+    CONTROL         "Translate After Start",IDC_TRANSFLTSTART,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,112,135,79,10
+    GROUPBOX        "Alter Codon Table",IDC_STATIC,88,168,120,50
+    LTEXT           "Codon",IDC_STATIC,102,184,24,8
+    LTEXT           "Prot",IDC_STATIC,130,184,15,8
+    LTEXT           "Start",IDC_STATIC,151,184,19,8
+    LTEXT           "GGG",IDC_ALTCODON,105,198,20,8
+    EDITTEXT        IDC_ALTPROT,131,195,13,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALTSTART,151,195,13,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Translate",IDOK,88,225,41,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,140,225,30,14
+    PUSHBUTTON      "&Help",ID_HELP,181,225,26,14
+END
+
+IDD_GEL_FORM DIALOG DISCARDABLE  0, 0, 270, 251
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LISTSEQUENCE,2,17,69,225,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LISTENZYME,75,17,52,225,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Run Gel",IDC_RUNGEL,35,0,38,14
+    PUSHBUTTON      "Copy",IDC_EDITCOPY,2,0,29,14
+    PUSHBUTTON      "&Help",ID_HELP,77,0,50,14
+END
+
+IDD_SEQALIGN DIALOG DISCARDABLE  0, 0, 262, 293
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Align Sequences"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Select Sequences For (Re)Aligning",IDC_STATIC,27,4,115,
+                    8
+    LISTBOX         IDC_LISTSEQUENCE,4,16,159,271,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Align to Unselected",IDC_ALIGNMETH0,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,175,26,75,10
+    CONTROL         "ReAlign Selected",IDC_ALIGNMETH1,"Button",
+                    BS_AUTORADIOBUTTON,175,39,68,10
+    CONTROL         "DeGap Sequences",IDC_DEGAP,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,186,52,73,10
+    LTEXT           "Score Table",IDC_STATIC,175,76,41,8
+    LTEXT           "Blosum 62",IDC_SCORETABLE,175,90,78,8
+    LTEXT           "Const Cost Length",IDC_STATIC,171,118,61,8
+    EDITTEXT        IDC_GAPLEN,235,114,18,13,ES_AUTOHSCROLL
+    LTEXT           "Gap Open Cost",IDC_STATIC,181,135,51,8
+    EDITTEXT        IDC_GAPOPEN,235,133,18,13,ES_AUTOHSCROLL
+    LTEXT           "Gap Extend Cost",IDC_STATIC,176,154,56,8
+    EDITTEXT        IDC_GAPEXTEND,235,151,19,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&ALIGN",IDOK,190,198,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,189,221,50,14
+    PUSHBUTTON      "&Help",ID_HELP,190,247,50,14
+END
+
+IDD_GENBANK DIALOG DISCARDABLE  0, 0, 217, 124
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Genbank Selection Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Name",IDC_STATIC,2,2,127,78
+    CONTROL         "LOCUS:",IDC_LOCUS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,6,13,118,10
+    CONTROL         "ACCESSION:",IDC_ACCESSION,"Button",BS_AUTORADIOBUTTON,6,
+                    27,118,10
+    CONTROL         "NID:",IDC_NID,"Button",BS_AUTORADIOBUTTON,6,41,118,10
+    CONTROL         "PID:",IDC_PID,"Button",BS_AUTORADIOBUTTON,6,56,119,10
+    CONTROL         "Translation",IDC_TRANSLATION,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,147,17,53,10
+    CONTROL         "Origin",IDC_ORIGIN,"Button",BS_AUTORADIOBUTTON,147,30,
+                    35,10
+    DEFPUSHBUTTON   "OK",IDOK,6,93,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,63,92,50,14
+    PUSHBUTTON      "&Help",ID_HELP,123,92,51,14
+END
+
+IDD_REPDLG DIALOG DISCARDABLE  0, 0, 300, 210
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Reports"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Show Calculations for:",IDC_STATIC,15,15,74,8
+    CONTROL         "Exact Matches",IDC_EXACTMATCH,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,26,25,60,10
+    CONTROL         "Juxtaposition greater than zero",IDC_JUXTAPOSITION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,37,112,10
+    CONTROL         "Aligned with gaps",IDC_ALIGNEDGAPS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,49,69,10
+    LTEXT           "Show results as:",IDC_STATIC,15,63,55,8
+    CONTROL         "Absolute Values",IDC_ABSOLUTEVAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,26,73,64,10
+    CONTROL         "Percent Values",IDC_PERCENTVAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,26,85,61,10
+    LTEXT           "Output Style:",IDC_STATIC,15,99,44,8
+    CONTROL         "Output as Matrix",IDC_OUTMATRIX,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,26,109,65,10
+    CONTROL         "Rows",IDC_OUTROWS,"Button",BS_AUTORADIOBUTTON,26,121,29,
+                    10
+    LTEXT           "Select Label Location:",IDC_STATIC,15,135,75,8
+    CONTROL         "Labels Top and Left Sides",IDC_LABELTOP,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,26,145,97,10
+    CONTROL         "Labels Top Only",IDC_LABELTOPLEFT,"Button",
+                    BS_AUTORADIOBUTTON,26,157,64,10
+    LTEXT           "Select Label Style:",IDC_STATIC,15,171,63,8
+    CONTROL         "Labels in single line",IDC_LABELSINGLE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,26,181,76,10
+    CONTROL         "Labels in two lines",IDC_LABELTWO,"Button",
+                    BS_AUTORADIOBUTTON,26,193,72,10
+    GROUPBOX        "Stat Report",IDC_STATIC,5,4,137,203
+    GROUPBOX        "Shade Report",IDC_STATIC,146,5,91,30
+    CONTROL         "Include AA codes",IDC_INC_AA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,153,18,75,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CONFDISPLAY DLGINIT
+BEGIN
+    IDC_FONTWEIGHT, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_FONTWEIGHT, 0x403, 5, 0
+0x6f42, 0x646c, "\000" 
+    0
+END
+
+IDD_GROUPPROP DLGINIT
+BEGIN
+    IDC_GROUPPCRSIM, 0x403, 3, 0
+0x4357, "\000" 
+    IDC_GROUPPCRSIM, 0x403, 3, 0
+0x4544, "\000" 
+    IDC_GROUPPCRSIM, 0x403, 3, 0
+0x5148, "\000" 
+    IDC_GROUPPCRSIM, 0x403, 3, 0
+0x4e4b, "\000" 
+    IDC_GROUPPCRSIM, 0x403, 3, 0
+0x494d, "\000" 
+    0
+END
+
+IDD_PDBDIALOG DLGINIT
+BEGIN
+    IDC_COMBOBACK, 0x403, 7, 0
+0x6952, 0x6262, 0x6e6f, "\000" 
+    IDC_COMBOBACK, 0x403, 8, 0
+0x6143, 0x7472, 0x6f6f, 0x006e, 
+    IDC_COMBOBACK, 0x403, 6, 0
+0x7453, 0x6369, 0x006b, 
+    IDC_COMBOBACK, 0x403, 11, 0
+0x6142, 0x6c6c, 0x5326, 0x6974, 0x6b63, "\000" 
+    IDC_COMBOBACK, 0x403, 10, 0
+0x7053, 0x6361, 0x4665, 0x6c69, 0x006c, 
+    IDC_COMBOBACK, 0x403, 10, 0
+0x6957, 0x6572, 0x7246, 0x6d61, 0x0065, 
+    IDC_SIDEDISP, 0x403, 6, 0
+0x7453, 0x6369, 0x006b, 
+    IDC_SIDEDISP, 0x403, 10, 0
+0x7053, 0x6361, 0x4665, 0x6c69, 0x006c, 
+    IDC_SIDEDISP, 0x403, 11, 0
+0x6142, 0x6c6c, 0x5326, 0x6974, 0x6b63, "\000" 
+    IDC_SIDEDISP, 0x403, 10, 0
+0x6957, 0x6572, 0x7246, 0x6d61, 0x0065, 
+    IDC_SIDEDISP, 0x403, 1, 0
+"\000" 
+    0
+END
+
+IDD_LOGODDS DLGINIT
+BEGIN
+    IDC_OUTTAB, 0x403, 9, 0
+0x6c42, 0x736f, 0x6d75, 0x3033, "\000" 
+    IDC_OUTTAB, 0x403, 9, 0
+0x6c42, 0x736f, 0x6d75, 0x3035, "\000" 
+    IDC_OUTTAB, 0x403, 9, 0
+0x6c42, 0x736f, 0x6d75, 0x3236, "\000" 
+    IDC_OUTTAB, 0x403, 9, 0
+0x6c42, 0x736f, 0x6d75, 0x3537, "\000" 
+    0
+END
+
+IDD_SEQSEL DLGINIT
+BEGIN
+    IDC_OUTTAB, 0x403, 9, 0
+0x6c42, 0x736f, 0x6d75, 0x3033, "\000" 
+    IDC_OUTTAB, 0x403, 9, 0
+0x6c42, 0x736f, 0x6d75, 0x3035, "\000" 
+    IDC_OUTTAB, 0x403, 9, 0
+0x6c42, 0x736f, 0x6d75, 0x3236, "\000" 
+    IDC_OUTTAB, 0x403, 9, 0
+0x6c42, 0x736f, 0x6d75, 0x3537, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "GeneDoc"
+    IDR_GENEDOTYPE          "\nGene\nGeneDoc Document\nMulti Sequence (*.msf)\n.msf\nGeneDoc.Document\nGeneDoc Document"
+    IDS_DUPSEQNAME          "Sequence Name Already in Sequence List: Skipping: %1"
+    IDR_SUMMARYVIEW         "\nGene\nGeneDoc Document\nMulti Sequence (*.msf)\n.msf\nGeneDoc.Document\nGeneDoc Document"
+    IDR_TEXTVIEW            "\nGene\nGeneDoc Document\nMulti Sequence (*.msf)\n.msf\nGeneDoc.Document\nGeneDoc Document"
+    IDR_DSTATVIEW           "\nGene\nGeneDoc Document\nMulti Sequence (*.msf)\n.msf\nGeneDoc.Document\nGeneDoc Document"
+    IDR_PHYLOVIEW           "\nGene\nGeneDoc Document\nMulti Sequence (*.msf)\n.msf\nGeneDoc.Document\nGeneDoc Document"
+    IDR_GELVIEW             "\nGene\nGeneDoc Document\nMulti Sequence (*.msf)\n.msf\nGeneDoc.Document\nGeneDoc Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "GeneDoc"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew Project"
+    ID_FILE_OPEN            "Open an existing document.\nFile Open"
+    ID_FILE_CLOSE           "Close the active document"
+    ID_FILE_SAVE            "Save the active document\nFile Save"
+    ID_FILE_SAVE_AS         "Save the active document with a new name"
+    ID_FILE_PAGE_SETUP      "Change the printing options"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options"
+    ID_FILE_PRINT           "Print the active document.\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents"
+    ID_HELP_INDEX           "List Help topics"
+    ID_HELP_USING           "Display instructions about how to use help"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nContext Help"
+    ID_HELP                 "Display help for current task or command"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane"
+    ID_PREV_PANE            "Switch back to the previous window pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles"
+    ID_WINDOW_SPLIT         "Split the active window into panes"
+    IDS_NEWFAILED           "operator new fails"
+    IDS_EXCEPTION           "exception caught"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection"
+    ID_EDIT_CLEAR_ALL       "Erase everything"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard, same as Button"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard"
+    ID_EDIT_FIND            "Find the specified text"
+    ID_EDIT_PASTE           "Insert Clipboard contents"
+    ID_EDIT_REPEAT          "Repeat the last action"
+    ID_EDIT_REPLACE         "Replace specific text with different text"
+    ID_EDIT_SELECT_ALL      "Select the entire document"
+    ID_EDIT_UNDO            "Undo the last action"
+    ID_EDIT_REDO            "Redo the previously undone action"
+    IDS_SEQDELSEQ           "Deleting Sequence!!\n\n %1\n\nAre you sure??"
+    IDS_NOMOREPAGES         "Cannot print any more than %1 pages\nat this printer resolution.\nPlease see Help on Printer Resolutions."
+    IDS_DISPLAYMAX          "This current combination of Data File Size and Display Width requires more Sequence Rows than can be shown in this version of GeneDoc. I am truncating the number of Sequence Rows on the Display. Please see the help file on Display Limitations."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPYINV         "Copy the selection and put it on the ClipBoard inverted."
+    IDM_CONFIGURE           "Configure GeneDoc user settings.\nConfiguration Dialog"
+    IDM_GENEARRANGE         "Enable Grab and Drag Mode.\nGrab and Drag"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_SELECT              "Select an area to copy.\nSelect Blocks"
+    IDM_GENEAUTOSHADE4      "Shade to 100, 80, 60 and 0% levels.\nShade 4 Levels"
+    IDM_GENEAUTOSHADE3      "Shade to 100, 80 and 0% levels.\nShade 3 Levels"
+    IDM_GENEAUTOSHADE2      "Shade to 100 and 0% levels.\nShade 2 Levels"
+    IDM_GENEINSERTDASH      "Insert/Delete Single Gaps into sequence.\nInsert/Delete Single Gap"
+    IDM_GENEDELETEDASH      "Delete/Insert Gap from sequence."
+    IDM_GENECLEARSHADE      "Display no Shading.\nNo Shading"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_SELECTCOL           "Select by colums for creating new window.\nSelect Columns"
+    IDM_GENECREATEWIN       "Create a new window from current column selection."
+    IDM_GENEMODEQUANTIFY    "Shade in Quantify mode.\nQuantified"
+    IDM_GENEEDITSEQ         "Move/Add/Delete/Import/Details of Sequences\nSequence List"
+    IDM_GENEMODECONSERVED   "Shade in conservation mode.\nConserved"
+    IDM_GENESCORE           "Score the current selection.\nScore Selected Columns"
+    IDM_GENEINSERTOTHER     "Insert/Delete gaps into all sequence execpt clicked one.\nInsert/Delete Gaps in Other"
+    IDM_GENEDELETEOTHER     "Delete a Dash from all sequences other than one clicked on."
+    IDM_GENEDELETEFILL      "Delete the selected gaps.\nDelete Selected Gaps Only"
+    IDM_GENEINSERTFILL      "Insert gaps into selection area.\nInsert Gaps into Selection"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_GENEGROUPENABLE     "If checked, then similarity groups enabled.\nToggle Similarity Groups"
+    ID_ON_HELP              "Get help on GeneDoc."
+    IDM_GENESTATFILE        "Create a Similarity Matrix Statistics Report\nStatistics Report"
+    IDM_GENESCOREFILE       "Create Inter Sequence GeneDoc Score Report\nScore Report"
+    IDM_GENESAVEINI         "Save Current User Settings as the defaults."
+    IDM_GENELOADINI         "Load User Defaults into Current Defaults"
+    IDM_GENEMODEPROPERTY    "Set Shading Mode to Chemical Property.\nProperties"
+    IDM_TITLINGF            "Invoke the Titling Facility Dialog."
+    IDM_MANUALSHADE         "Manual Shade Residues with Color Bar.\nToggle Manual Shading"
+    ID_EDIT_COPY8           "Copy as 256 Color Device Independent Bitmap"
+    ID_EDIT_COPY0           "Copy as Display Resolution Bitmap"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPYINV0        "Copy as Display Resolution Bitmap (Inv)"
+    ID_PHYLOBAR             "Phylo Bar ID?"
+    ID_EDIT_COPYINV8        "Copy as 256 Color Bitmap (Inv)"
+    ID_EDIT_COPYBIT         "Copy the Select as a straight Bitmap."
+    ID_EDIT_COPYINVBIT      "Copy of a Straight Inverted Bitmap."
+    IDM_PHYLODLG            "Edit, Import and Export Tree Expression.\nManage Expression"
+    IDM_PHYLOVIEW           "Open PhyloGenetic Tree View.\nPhylogenetic View"
+    IDM_PHYLODELETE         "Delet the currently selected node.\nDelete Node"
+    IDM_PHYLOCLEAR          "Clear All Nodes from Tree.\nClear All"
+    IDM_GENEVIEW            "Open the Alignment View Window.\nAlignment View"
+    IDM_GENESCOREPAIR       "Determine scores Pair Wise."
+    IDM_GENESCORETREE       "Determine Score using Phylogenetic Tree."
+    IDM_GENECLEARSCORE      "Clear all Scores."
+    IDM_PHYLOCREATE         "Create a node from two selected tree components.\nCreate Node"
+    IDM_PHYLOMVUP           "Move Selected Item Up.\nMove Up"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_PHYLOMVDN           "Move Selected Item Down.\nMove Down"
+    IDM_PHYLOCOPY           "Copy Tree to the Clipboard\nCopy"
+    IDM_COPYTEXT            "Copy the Project to the clipboard as Text."
+    IDM_GENECOPYPICT        "Copy Selection to MAC Pict file."
+    IDM_GENEEDITMODE        "Toggle the Residue Edit Mode for Residue Editing.\nResidue Editing"
+    IDM_SHOWTABLE           "Show Current Score Table."
+    IDM_GENESCORENUMB       "Score with Numbed Phylogenetic Tree."
+    IDM_GENESCOREINFO       "Save and Show Scoring Information."
+    IDM_GENEMODESTRUCTURE   "Set Structure Shading Mode.\nStructure"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_GENERESIDUEMODEDIFF "Display Residues in Differences Mode.\nResidue Differences"
+    IDM_EDITGROUPPROP       "Edit Sequence GROUPS properties.\nSuper Family Group Dialog"
+    IDM_GENESHADEGROUPS     "Shade with Groups Configure Setup.\nShade Per Group Configuration"
+    IDM_GENESHADEGROUPCONSERVE "Shade in Group Conserved Mode."
+    IDM_GENESHADECONTRAST   "Shade in Group Contrast Mode."
+    IDM_GENESHADECONTRASTNOGAP 
+                            "Shade in Group Contrast Mode without Shading Gaps."
+    IDM_COPYMETACLIP        "Copy the Selection to the Clipboard as a MetaFile.\nCopy MetaFile"
+    IDM_COPYMETAFILE        "Copy Selection to File as MetaFile."
+    IDM_STCLOADPSDB         "Load Definition for PSDB Files."
+    IDM_STCLOADUSERFILE     "Load ColorMap/DataType from User File."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_STCLEARALL          "Clears all definitions."
+    IDM_STCLOADEMBL         "Load Definitions for EMBL files."
+    IDM_GENEDSTATVIEW       "ReOpen Graph View.\nPlot View."
+    IDM_DSTATCOPY           "Copy Graph to Clipboard"
+    IDM_DSTATSCORE          "DStat Score Only Groups Sequences."
+    IDM_DSTATGRAPHSETUP     "Configure DStat Graph Parameters."
+    IDM_DSTATWRITEDATA      "Write DStat Data to a file."
+    IDM_DSTATREADSET1       "Read External Data for Set 1."
+    IDM_DSTATREADSET2       "Read External Data for Set 2."
+    IDM_DSTATREADSETS       "Read External Data Seperated by a 'X' line."
+    IDM_DSTATWRITESCORE     "Write Data Input as Scores."
+    IDM_DSTATSCOREALL       "DStat Score All Sequences."
+    IDM_GROUPSHADEPCR       "Shade Group in PCR Constrast Mode."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_GROUPSHADEPCRSIM    "Shade Groups in PCR Constrast Mode using PCR Similarities Array."
+    IDM_FILEEXPORT          "Export File: Select Type in Save As Dialog."
+    IDM_FILEIMPORT          "File Import: Select Type in Open Dialog."
+    IDM_CLEARGAPCOLS        "Clear all Columns that contain only gaps."
+    IDM_PLOTSTATDSTAT       "Plot % Identity Statistics in DStat."
+    IDM_PLOTFAVSUBS         "Plot % of Favorable Substitutions in DStat."
+    IDM_PLOTGROUP           "Plot % Identities for a Group."
+    IDM_PLOTGROUPFAV        "Plot % Favorable Substitutions for a Group."
+    IDM_GENEFINDREPLACE     "Find and Replace Same Size Strings."
+    IDM_GENECOPYSEQ         "Copy Selected Sequence Data from One Seq to Another."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_POS        "123456789012345678901234567890"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_GENESHADEGROUPPHYSCHEM "Shade PhysioChemical Properties for Groups."
+    IDM_GENEMODEPHYSIOCHEM  "Shade Alignment in PhysioChemical Properties Mode.\nPhysiochemical"
+    IDM_GENEGROUPSGCONX     "Shade Group Conserved with Cross Group Shading."
+    IDM_GENEMODESEARCH      "Display Rebase/ProSite Search Mode\nRebase/Prosite Search"
+    IDM_GENECOPYHTML        "Copy the Selected Blocks to a HTML file."
+    IDM_DISPTREEWEIGHT      "Toggle Display Tree Weights or Numbers.\nDistance Weights/Numbers"
+    IDM_GENESCOREKEY        "Rescore area being worked on"
+    IDM_GENESHADEGROUPDNA   "Perform DNA Set Group analysis."
+    IDM_SRCHREPVIEW         "Create and view enzyme fragment report."
+    IDM_PLOTFRAG            "Plot unique enzyme cut fragments for aligment."
+    IDM_GENEMODESIMILARITY  "Shade were sequences identical to selected sequences.\nIdentities"
+    IDM_STCLOADPDB          "Load definition for PDB files."
+    IDM_SUMMARYVIEW         "Show alignment in Summary View Mode.\nSummary View"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_GENECOPYRTF         "Copy selected blocks as an RTF file."
+    IDM_GENEMODELOGODDS     "Show Display in Log Odds mode.\nLog Odds"
+    IDM_GENEWRITELOGODDS    "Calculate LogOdds Matrix for selected area."
+    IDM_LOGODDSVIEW         "Create and View LogOdds Report."
+    IDM_GENEMOVE            "Slide sequences without affecting gaps.\nGrab and Slide"
+    IDM_DELCOLUMNS          "Delete ALL Data in selected Columns"
+    IDM_FIND                "Find Sequence.\nFind"
+    IDM_COPYCONS            "Copy the Consensus data to the Clipboard as Fasta File."
+    IDM_SHOWMANSHADE        "Toggle Display of Manual Shading.\nShow Manual Shading"
+    IDM_SHOWCOMMENTS        "Toggle Display of Manual Comments.\nShow Comments"
+    IDM_CLEARMANSHADE       "Clear All Manual Shading."
+    IDM_CLEARCOMMENTS       "Clear All Manual Comments."
+    IDM_SELECTARRSEQ        "Select Sequences for arrangement operations.\nSelect Sequences For Arrangement"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_GENESCORELO         "Score selections with logodds calculations."
+    ID_SCORING_RESCOREALLSCORES "Rescore All Defined Score Areas."
+    IDM_RESCOREALL          "ReCalculate and Update all Score Areas."
+    IDM_COMPLIMENTSEL       "Select Sequences that are not selected, Deselect those that are."
+    IDM_REPLACEFROMPROJ     "Replace selected data in this project with data from another project."
+    IDM_GENEINSERTONE       "Insert a single column of gaps.\nInsert Single Gap Column"
+    IDM_DNATRANS            "Translate DNA to Protein and create new project."
+    IDM_GENEDELETEONE       "Delete a single column of gaps."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_GENEREPORTVIEW      "View the current Text Report.\nReport View"
+    IDM_DNAFFREQREP         "Base Composition Report.\nBase Composition Report"
+    IDM_REPSAVEFILE         "Save Report as a File."
+    IDM_REGAPDNA            "Apply Gaps in Protein Alignment to DNA Alignment."
+    IDM_GENEGELVIEW         "Show Gel View\nGel View"
+    IDM_DNACOLFREQREP       "Column Composition Report"
+    IDM_DNACOLFRWREP        "Create a Column Composition report using sequence weights."
+    IDM_ALIGN               "Align Sequences or Alignment"
+    IDM_MANSHADEREP         "Report detailing manual shading."
+    IDM_SHADING_REP         "Report locations of shadings."
+    IDM_CONFIGREPORT        "Open report configuration dialog."
+    IDM_CONSPROSITE         "Copy the consensus as prosite to clipboard."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "res\genedoc.rc2"  // non-App Studio edited resources
+
+#include "afxres.rc"  	// Standard components
+#include "afxprint.rc"	// printing/print preview resources
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

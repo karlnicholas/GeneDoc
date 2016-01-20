@@ -1,0 +1,190 @@
+2.7
+* Changed header storage to allow for larger files
+* Changed to updated installation package.
+
+2.6.3
+* Change the PhysioChemical properties display. Moved the Aromatic group to be between the Positive and 
+  Negative groups.
+
+2.6
+* Fixed DDE abilities. 
+* Added saving of backup files. 
+* Several Fixes for corrupt files problem. 
+* Added location number after sequence name. 
+* Added reports showing shading locations. 
+* Fixed bug in header for more than 256 sequences. 
+* Fixed bug in header for more than 256 manual shadings or comments. 
+* Changed composition report to not double count ambiguous codes. 
+* Added feature for saving sequence orderings and sort by name. 
+* Added a feature to rasmol scripts. 
+* Added Report formating options. 
+* Added PAIRWISE Alignment under Edit Menu. 
+* Added Genbank file Import. 
+* Fixed bug for file cannot be read after edited and saved. 
+* Fixed up some translation problems. 
+* Fixed bugs for crashing on larger files after edits. 
+* Added Column Composition reports. 
+* Fixed bug where editing a project created by edit/copy caused crashes. 
+* Fixed Bug causes crash when trying to do file/save as a project that was created by importing
+
+2.5
+* Made spaces in sequence names a warning. 
+* Fixed bug where loading user files after EMBL files fails. 
+* Fixed bug in Enzyme Report where first cut 1 too short. 
+* Changed caret handling a bit.
+* Added Copy Consensus to clipboard as fasta file function.
+* Changed toolbar copy button to copy as metafile.
+* Changed replace to work on whole alignment if nothing selected.
+* Added Saving of Manual Shading with show/hide config and button.
+* Added Saving of Comments with show/hide config and button.
+* Added Quick Find Function with MisMatches and Ins/Deletes.
+* Added Ins/Del keys to Insert and Delete Gaps always.
+* Added Right Mouse buttons does opposite of left mouse button in Arrangement modes.
+* Fixed bug that hangs when export as Text/No Gaps.
+* Changed user cannot enter spaces into data area.
+* Added Display '~' as ' ' feature.
+* Changed Fixed width parameter to be as high as 1000000.
+* Removed 'Protected First Line' from Titling Facility.
+* Fixed DNA complement to include ambiguities.
+* Improved Slide Text routine so it does not unnecessarily grow alignment.
+* Added Alignment Width Block Size option.
+* Fixed possible crash when scoring/stats on few sequences.
+* Added sequence description field.
+* Added import IUPAC only funtion.
+* Added Delete Data Columns function.
+* Added Print Filename and Date with pagenumber.
+* Fixed manual data input from crashing
+
+2.4
+* Fixed Group Properties function of Identity Tab.
+* Fixed Error in Copy to New Project function.
+* Added Summary View mode.
+* Added copy as .RTF support.
+* Fixed Bitmap copy function.
+* Added Pict File support to summary view, fixed summary view bug.
+* Changed fasta file max sequence name length from 20 to 50.
+* Improved Import/Export routines to handle the clipboard and text files.
+* Fixed scoring routines to handle lower case chars properly.
+* Added LogOdds Display Mode: Reads and Display MEME files.
+* Added LogOdds Calc and Write routine.
+* Added LogOdds Report routine.
+* Fixed possible bug in Search Display: Patterns at end of sequences.
+* Removed built in PSDB support from 16-bit version to make space.
+* Fixed a big causing crashes in Grab and Drag mode.
+* Added Grab and Slide arrangement mode.
+* Changed RTF Files to work better for background shading.
+* Fixed DStat Plot save plot data for Percent Identity Plots.
+* Fixed scorefile and scoring routines when encounter unusual characters.
+* Fixed display bug when names shorter than sequence indicators.
+* Added optional Carbonyl Oxygen display on backbone in rasmol script.
+
+2.3
+* Fixed Configuration Variables not being initialized properly.
+* Added DNA Ambiguity code.
+* Fixed input sequences detecting gap chars.
+* Possible fix of input sequences duplicating data.
+* Added DNA group set analysis display.
+* Fixed Contrast mode to not include zero level scores.
+* Fixed GeneDoc .msf header reader to be forward compatable.
+* Fixed rebase file read for larger patterns.
+* Added Rebase Search Filters.
+* Added user configurable rebase shading overlap color.
+* Added export of search list to rebase readable file.
+* Added reporting of duplicate sequence names.
+* Added Display/No Display of individual Physiochemical properties.
+* Fixed bug ReBase patterns found twice if following a gap char.
+* Added Rebase cut sites/fragment length/unique fragment/unique frags per group report.
+* Added Plot of unique fragment lengths.
+* Added Display of reports that can handle any size files.
+* Added print function to reports.
+* Added ability to print shading only.
+* Added Identity Display Mode.
+* Fixed Changing project type setting properties and score tables.
+* Fixed change gap char for alignment code.
+* Fixed RasMol script to not blank display when no sidechains selected.
+* Added Shade backbone only and sidechain only to rasmol script.
+* Added Sequence Start Position attribute.
+* Added Ident All or Ident conserved styles to Ident Display Mode.
+* Fixed Structure Shading changing when have both Non-Group and Groups structure info loaded.
+* Added PDB Read routines for structure shading.
+
+
+2.2
+* Fixed 'Clear all Gap Columns' Function.
+* Added AutoJustify of Max Name Length and Max Position Indicator Length.
+* Added Max Name Length Displayed Field.
+* Added User Configured Name/Sequence Block seperation string.
+* Added User Configured Seq Loc Ind/Sequence Block seperation string.
+* Added Phylip File Import function.
+* Fixed program hanging when doing File/New, File/Import,
+  and then a caret positioning function.
+* Fixed program crashing when deleting all sequences.
+* Added UnOfficial CrossHatch pattern support for background shading.
+* Added ability to select Sequences to be exported.
+* Changed the GeneDoc information section of the .MSF file.
+  *** NOTE: This new header can NOT be read by previous versions of GeneDoc
+* Added ProSite/ReBase Search Results mode.
+* Added Auto-Load Search Lists with ProSite or ReBase files.
+  List gets loaded with matches found in the ProSite or Rebase Files.
+* Fixed the Copy to New Project function in many cases, most having
+  to do with group information being copied.
+* Changed Structure Sequence Matching rountine to work for both
+  overlap and within cases.
+* Added HTML output.
+* Added RasMol coloring script output.
+* Added Weights in Phylogenetic tree parsing.
+* Fixed page up bug.
+* Fixed Pict files sequence names not being group colored.
+* Relaxed .MSF input routine, does not need spaces every 10 in data rows.
+* Fixed import routines to get last char if no last CR/LF.
+* Added RasMol SideChain display options to coloring script output.
+* Changed Duplicate Sequence Names To Complain and Notify, but not abort.
+* Changed Group Names in Group Sequence Dialog to be colored with
+  group colors.
+* Changed Fasta input to limit names to length of 20.
+* Added conserved shading of substitution groups styles. 
+* Fixed extra CR/LF being added to comments in file with each additional file save.
+
+2.1
+* Added Configurable Marker Line above Consensus Line to show column position.
+* Added Configurable Gap Indicator For Consensus Line.
+* Added Import and Export of additional file types: Phylip, PIR, Clustal ALN, Fasta.
+* Added a function to clear Columns that are All gaps.
+* Rewrote fasta import sequence routine.
+* Fixed bug in filler block at end in Print in Landscape mode.
+* Fixed bug where stat file tests of residue identity and score was case sensitive.
+* Added residue display in upper, lower, or as_is case.
+* Added sequence reverse and DNA compliment functions.
+* Added (and fixed) manual input and clipboard paste of sequence data.
+* A Bunch of Fixes to the DStat Display.
+* Added C.D.F. plot of Statistics Scores for Alignment and Groups.
+* Fixed Bug of DNA/RNA Project type being switched.
+* Added Status Line Sequence Location Indicator.
+* Added File Import Type Selection Dialog for import of *.*
+* Added PhysioChemical Properties Group Shading Display(s).
+* Added Sequence String Substitution Function.
+* Added Sequence Duplicate Function.
+* Added Sequence Block Copy of Data Function.
+* Added Copy Sequence to Clipboard Function.
+* Added PhysioChemical Shading Mode(s).
+* Fixed Phylogenetic tree import function.
+* Changed Phylogenetic tree name parsing slightly.
+* Fixed a rescore phyogenetic tree score bug.
+* Added Conserved Group With Cross Shading display.
+* Updated and Fixed help file.
+
+2.0.4:
+* Fixed new Project wont reopen bug.
+* changed .msf file open code to be much faster.
+* fixed a global free invalid handle in import fasta bug.
+* added support for up to 50 char sequence names.
+* better detection and error message for duplicate sequence names.
+* duplicate sequences skipped on file imports.
+* User Defined structure shading now overrides built in structure shading when already defined.
+* fixed handling of '!' in residue field in dssp files.
+
+2.0.1: Fixed input fasta bug.
+
+Version 2.0: What didn't change?
+
+

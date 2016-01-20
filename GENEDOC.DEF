@@ -1,0 +1,13 @@
+; genedoc.def : Declares the module parameters for the application.
+
+NAME         GENEDOC
+DESCRIPTION  'GENEDOC Windows Application'
+EXETYPE      WINDOWS
+
+CODE         PRELOAD MOVEABLE DISCARDABLE
+DATA         PRELOAD MOVEABLE MULTIPLE
+
+HEAPSIZE     MAXVAL   ; initial heap size
+; Stack size is passed as argument to linker's /STACK option
+
+

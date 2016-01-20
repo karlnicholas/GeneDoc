@@ -1,0 +1,55 @@
+COLORMAP,EMBLESH,"sheet",E,255,255,0,0
+COLORMAP,EMBLESH,"no pred", ,255,255,255,0
+COLORMAP,EMBLESH,"helix",H,240,0,128,0
+COLORMAP,PPPHDHTM,"Helical Tr.",H,0,0,255,1
+COLORMAP,PPPHDHTM,"No Pred", ,255,255,255,0
+COLORMAP,PPSUBHTM,"Helical Tr.",H,0,0,255,1
+COLORMAP,PPSUBHTM,"No Pred",.,255,255,255,0
+COLORMAP,PPSUBHTM,"Loop",L,255,0,0,1
+COLORMAP,EMBL0T9,"0",0,0,31,255,1
+COLORMAP,EMBL0T9,"1",1,0,95,255,1
+COLORMAP,EMBL0T9,"2",2,0,191,255,1
+COLORMAP,EMBL0T9,"3",3,0,255,255,1
+COLORMAP,EMBL0T9,"4",4,0,255,95,1
+COLORMAP,EMBL0T9,"5",5,0,255,0,1
+COLORMAP,EMBL0T9,"6",6,127,255,0,0
+COLORMAP,EMBL0T9,"7",7,223,255,0,0
+COLORMAP,EMBL0T9,"8",8,223,159,0,0
+COLORMAP,EMBL0T9,"9",9,255,63,0,1
+COLORMAP,PPP_3ACC,"0-9%",b,0,0,255,1
+COLORMAP,PPP_3ACC,"9-36%", ,255,255,255,0
+COLORMAP,PPP_3ACC,"36-100%",e,255,0,0,1
+COLORMAP,PPSUBACC,"0-9%",b,0,0,255,1
+COLORMAP,PPSUBACC,"9-36%",.,255,255,255,0
+COLORMAP,PPSUBACC,"36-100%",e,255,0,0,1
+COLORMAP,PPSUBSEC,"Helix",H,240,0,128,1
+COLORMAP,PPSUBSEC,"Sheet",E,255,255,0,0
+COLORMAP,PPSUBSEC,"no pred",.,255,255,255,0
+COLORMAP,PPSUBSEC,"Loop",L,96,128,255,1
+COLORMAP,DSSP,"Alpha Helix",H,240,0,128,1
+COLORMAP,DSSP,"Beta Bridge Residue",B,0,255,255,1
+COLORMAP,DSSP,"Extended Strand",E,255,255,0,0
+COLORMAP,DSSP,"3/10-Helix",G,238,130,238,1
+COLORMAP,DSSP,"5-Helix",I,128,0,0,1
+COLORMAP,DSSP,"H-bonded Turn",T,255,0,0,1
+COLORMAP,DSSP,"Bend",S,96,128,255,1
+COLORMAP,DSSP,"-",-,255,255,255,0
+DATATYPE,"PHD sec |",0,0,"PP PHD SEC","Prot Pred - Structure Prediction",EMBLESH
+DATATYPE,"Rel sec |",0,0,"PP REL SEC","Prot Pred - Structure Reliability",EMBL0T9
+DATATYPE,"prH sec |",0,0,"PP PRH SEC","Prot Pred - Probability Helix",EMBL0T9
+DATATYPE,"prE sec |",0,0,"PP PRE SEC","Prot Pred - Probability Sheet",EMBL0T9
+DATATYPE,"prL sec |",0,0,"PP PRL SEC","Prot Pred - Probability Loop",EMBL0T9
+DATATYPE,"SUB sec |",0,0,"PP SUB SEC","Prot Pred - Sub Structure",PPSUBSEC
+DATATYPE,"P_3 acc |",0,0,"PP P_3 ACC","Prot Pred - Solvent Accessibility in 3 states",PPP_3ACC
+DATATYPE,"PHD acc |",0,0,"PP PHD ACC","Prot Pred - Solvent Accessibility",EMBL0T9
+DATATYPE,"Rel acc |",0,0,"PP REL ACC","Prot Pred - Solvent Reliability",EMBL0T9
+DATATYPE,"SUB acc |",0,0,"PP SUB ACC","Prot Pred - Sub Solvent Accessibility",PPSUBACC
+DATATYPE,"PHD htm |",0,0,"PP PHD HTM", "Prot Pred - Helical Transmembrane Region",PPPHDHTM
+DATATYPE,"Rel htm |",0,0,"PP REL HTM", "Prot Pred - Helical Trans. Reliability",EMBL0T9
+DATATYPE,"prH htm |",0,0,"PP PRH HTM", "Prot Pred - Helical Trans. Probability",EMBL0T9
+DATATYPE,"prL htm |",0,0,"PP PRL HTM", "Prot Pred - Loop Probability",EMBL0T9
+DATATYPE,"SUB htm |",0,0,"PP SUB HTM", "Prot Pred - Sub Helical Trans.",PPSUBHTM
+DATATYPE,"Pred SS |",0,0,"Pred SS","SS Pred - Prediction",EMBLESH
+DATATYPE,"Clean SS|",0,0,"Clean SS","SS Pred - Clean Prediction",EMBLESH
+DATATYPE,"PREDATOR",0,0,"Predator","Predator - Prediction",EMBLESH
+DATATYPE,"/2_STR:DSS",0,0,"DSSP","Secondary Structure -- DSSP",DSSP
