@@ -22,3 +22,7 @@
 
 The 1.52 project and makefile are in the GeneDoc directories. The 32 bit project files are in the \Gene32 directory, but compile the source in the \GeneDoc directory.
 
+Download at [GeneDoc download](http://genedoc.software.informer.com/download/)
+
+An old tutorial [GeneDoc Tutorial](https://biou.psc.edu/file.php/139/GeneralFiles/PSC_-_GeneDoc_Tutorial.pdf)
+
